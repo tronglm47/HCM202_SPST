@@ -4,6 +4,7 @@ const navLinks = [
   { label: 'Trang chủ', path: '/' },
   { label: 'Trắc nghiệm nhanh', path: '/quiz' },
   { label: 'Thử thách 1 tuần', path: '/challenge' },
+  { label: 'Bảng xếp hạng', path: '/ranking' },
 ]
 
 export function Navbar() {
