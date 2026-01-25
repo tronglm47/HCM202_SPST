@@ -10,12 +10,13 @@ export function ChallengePage() {
 
     useEffect(() => {
         // Check xem có challenge nào đã bắt đầu không
-        const firstPlanId = plans.weeks[0].id
-        const progress = getChallengeProgress(firstPlanId)
-
-        if (progress) {
-            // Nếu đã có challenge, navigate thẳng đến content
-            setSelectedPlanId(firstPlanId)
+        for (const plan of plans.weeks) {
+            const progress = getChallengeProgress(plan.id)
+            if (progress) {
+                // Nếu đã có challenge, navigate thẳng đến content
+                setSelectedPlanId(plan.id)
+                return
+            }
         }
     }, [])
 

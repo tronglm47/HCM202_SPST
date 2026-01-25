@@ -1,5 +1,7 @@
 // Utility để quản lý localStorage cho challenge
 
+import plans from '../plan.json'
+
 export interface ChallengeProgress {
     planId: number
     userId: string
@@ -10,6 +12,13 @@ export interface ChallengeProgress {
 
 const STORAGE_KEY = 'challenge_progress'
 const USER_ID_KEY = 'challenge_user_id'
+
+// Lấy hôm nay theo giờ Việt Nam (GMT+7)
+const getTodayVN = (): string => {
+    const now = new Date()
+    const vnTime = new Date(now.getTime() + 7 * 60 * 60 * 1000)
+    return vnTime.toISOString().split('T')[0]
+}
 
 // Tạo hoặc lấy user ID duy nhất
 export const getUserId = (): string => {
@@ -37,7 +46,7 @@ export const saveChallengeProgress = (planId: number, progress: ChallengeProgres
 // Khởi tạo challenge
 export const initializeChallenge = (planId: number): ChallengeProgress => {
     const userId = getUserId()
-    const today = new Date().toISOString().split('T')[0]
+    const today = getTodayVN()
 
     const progress: ChallengeProgress = {
         planId,
@@ -90,7 +99,7 @@ export const isDayUnlocked = (planId: number, dayIndex: number): boolean => {
     }
 
     const startDate = new Date(progress.startDate)
-    const today = new Date()
+    const today = new Date(getTodayVN())
     const daysPassed = Math.floor((today.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24))
 
     // Mở khóa dựa trên số ngày đã qua
@@ -107,7 +116,7 @@ export const getDaysPassed = (planId: number): number => {
     }
 
     const startDate = new Date(progress.startDate)
-    const today = new Date()
+    const today = new Date(getTodayVN())
     return Math.floor((today.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24))
 }
 
@@ -121,4 +130,77 @@ export const isDayCompleted = (planId: number, dayIndex: number): boolean => {
 export const resetChallenge = (planId: number): void => {
     const userId = getUserId()
     localStorage.removeItem(`${STORAGE_KEY}_${planId}_${userId}`)
+}
+
+// [DEV] Advance challenge start date (để test unlock ngày mới)
+// Cách dùng: advanceChallengeDate(1, 3) → advance 3 ngày
+// hoặc advanceCurrentChallenge(3) → auto-detect planId
+export const advanceChallengeDate = (planId: number, daysToAdvance: number): void => {
+    const progress = getChallengeProgress(planId)
+    if (!progress) {
+        console.warn('Không có challenge để advance')
+        return
+    }
+
+    const currentStartDate = new Date(progress.startDate)
+    const newStartDate = new Date(currentStartDate.getTime() - daysToAdvance * 24 * 60 * 60 * 1000)
+
+    const updatedProgress: ChallengeProgress = {
+        ...progress,
+        startDate: newStartDate.toISOString().split('T')[0]
+    }
+
+    saveChallengeProgress(planId, updatedProgress)
+    console.log(`✓ Advance challenge ${daysToAdvance} ngày. Start date mới: ${updatedProgress.startDate}`)
+}
+
+// [DEV] Lấy planId hiện tại của user (plan đầu tiên có progress)
+export const getCurrentPlanId = (): number | null => {
+    for (const plan of plans.weeks) {
+        const progress = getChallengeProgress(plan.id)
+        if (progress) {
+            return plan.id
+        }
+    }
+    return null
+}
+
+// [DEV] Advance challenge hiện tại mà không cần truyền planId
+export const advanceCurrentChallenge = (daysToAdvance: number): void => {
+    const planId = getCurrentPlanId()
+    if (!planId) {
+        console.warn('❌ Không có challenge nào. Hãy bắt đầu challenge trước!')
+        return
+    }
+    advanceChallengeDate(planId, daysToAdvance)
+}
+
+// Expose to window for dev testing
+if (typeof window !== 'undefined') {
+    (window as any).__challengeStorage = {
+        advanceChallengeDate,
+        advanceCurrentChallenge,
+        getCurrentPlanId,
+        getChallengeProgress,
+        resetChallenge,
+        getUserId,
+        // Debug helpers
+        listAllChallenges: () => {
+            const userId = getUserId()
+            console.log('Current User ID:', userId)
+            console.log('=== All Challenges in LocalStorage ===')
+            const keys = Object.keys(localStorage).filter(k => k.includes('challenge_progress'))
+            keys.forEach(key => {
+                const data = localStorage.getItem(key)
+                console.log(`Key: ${key}`)
+                console.log(`Data:`, JSON.parse(data || '{}'))
+            })
+            return keys.length > 0 ? 'Tìm thấy' : 'Không có challenge nào'
+        },
+        clearAllChallenges: () => {
+            const keys = Object.keys(localStorage).filter(k => k.includes('challenge_progress'))
+            keys.forEach(key => localStorage.removeItem(key))
+            console.log(`✓ Xóa ${keys.length} challenge(s)`)
+        }
+    }
 }
