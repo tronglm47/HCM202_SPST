@@ -116,7 +116,7 @@ export function RankingPage() {
                                     <tr className="bg-linear-to-r from-pine to-pine/80 text-white">
                                         <th className="px-6 py-4 text-left font-semibold">Hạng</th>
                                         <th className="px-6 py-4 text-left font-semibold">Tên</th>
-                                        <th className="px-6 py-4 text-center font-semibold">Tổng điểm</th>
+                                        <th className="px-6 py-4 text-center font-semibold">Tổng lượt</th>
                                         <th className="px-6 py-4 text-right font-semibold pr-6">Thời gian hoàn thành</th>
                                     </tr>
                                 </thead>
