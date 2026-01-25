@@ -176,7 +176,7 @@ export function QuickQuiz() {
     }
   }
 
-  const finishGame = async (finalAttempts: number, finalPoints: number) => {
+  const finishGame = async (finalAttempts: number) => {
     if (isFinished) return
     const endTime = Date.now()
     const effectiveStart = startTime ?? endTime
@@ -215,7 +215,7 @@ export function QuickQuiz() {
     setHasAnswered(true)
 
     if (nextPoints <= 0) {
-      await finishGame(nextAttempts, nextPoints)
+      await finishGame(nextAttempts)
       return
     }
   }
@@ -224,7 +224,7 @@ export function QuickQuiz() {
     if (isFinished || !hasAnswered) return
 
     if (currentIndex >= questions.length - 1) {
-      await finishGame(attempts, points)
+      await finishGame(attempts)
       return
     }
 
