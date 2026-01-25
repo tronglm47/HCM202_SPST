@@ -1,0 +1,274 @@
+{
+    "weeks": [
+        {
+            "id": 1,
+            "title": "Tuần Sống Giản Dị",
+            "days": [
+                {
+                    "day": "Ngày 1",
+                    "title": "Dọn góc làm việc",
+                    "progress": "1/7",
+                    "description": "Loại bỏ vật dụng không cần thiết, dành hộp riêng cho tài liệu quan trọng như cách Bác luôn gọn gàng, ngăn nắp.",
+                    "quote": "Bàn làm việc của Bác lúc nào cũng giản đơn, chỉ vài quyển sách, tập giấy và cây bút, nhưng mọi thứ luôn ngăn nắp, khoa học.",
+                    "suggestions": [
+                        "Dành 15 phút phân loại giấy tờ cũ.",
+                        "Vệ sinh bàn, màn hình, bàn phím.",
+                        "Sắp xếp đồ theo mức độ sử dụng."
+                    ]
+                },
+                {
+                    "day": "Ngày 2",
+                    "title": "Bữa ăn thanh đạm",
+                    "progress": "2/7",
+                    "description": "Ăn uống đơn giản, ưu tiên rau củ, tránh lãng phí như bữa cơm đạm bạc của Bác.",
+                    "quote": "Bữa ăn của Bác thường chỉ có vài món dân dã nhưng đủ chất và không bao giờ để thừa.",
+                    "suggestions": [
+                        "Chọn món ít dầu mỡ.",
+                        "Ăn hết khẩu phần, không bỏ thừa.",
+                        "Ghi lại chi phí bữa ăn."
+                    ]
+                },
+                {
+                    "day": "Ngày 3",
+                    "title": "Tiết kiệm điện",
+                    "progress": "3/7",
+                    "description": "Tắt các thiết bị không sử dụng, sử dụng năng lượng có ý thức.",
+                    "quote": "Bác căn dặn: Việc nhỏ mà làm tốt sẽ thành việc lớn.",
+                    "suggestions": [
+                        "Tắt đèn khi ra khỏi phòng.",
+                        "Rút sạc khi pin đầy.",
+                        "So sánh chỉ số điện cuối ngày."
+                    ]
+                },
+                {
+                    "day": "Ngày 4",
+                    "title": "Trang phục giản dị",
+                    "progress": "4/7",
+                    "description": "Ăn mặc gọn gàng, lịch sự, không chạy theo hình thức.",
+                    "quote": "Bác thường mặc bộ kaki bạc màu nhưng luôn sạch sẽ, chỉnh tề.",
+                    "suggestions": [
+                        "Chọn quần áo đơn giản.",
+                        "Giữ sạch, phẳng phiu.",
+                        "Không chạy theo hàng hiệu."
+                    ]
+                },
+                {
+                    "day": "Ngày 5",
+                    "title": "Ghi chép chi tiêu",
+                    "progress": "5/7",
+                    "description": "Theo dõi từng khoản chi để hiểu giá trị lao động và tiền bạc.",
+                    "quote": "Tiết kiệm không phải bủn xỉn, mà là tôn trọng công sức của nhân dân.",
+                    "suggestions": [
+                        "Ghi lại mọi khoản chi.",
+                        "Phân loại cần thiết và không cần thiết.",
+                        "Tìm cách giảm chi cho ngày mai."
+                    ]
+                },
+                {
+                    "day": "Ngày 6",
+                    "title": "Đọc và suy ngẫm",
+                    "progress": "6/7",
+                    "description": "Dành thời gian đọc sách và ghi lại điều tâm đắc.",
+                    "quote": "Bác học suốt đời, học trong sách và trong nhân dân.",
+                    "suggestions": [
+                        "Đọc 20–30 phút.",
+                        "Ghi lại 1 ý hay.",
+                        "Liên hệ với bản thân."
+                    ]
+                },
+                {
+                    "day": "Ngày 7",
+                    "title": "Tổng kết tuần",
+                    "progress": "7/7",
+                    "description": "Đánh giá tuần sống giản dị và điều chỉnh cho tuần sau.",
+                    "quote": "Mỗi ngày tốt là một bông hoa đẹp, cả dân tộc ta là một rừng hoa đẹp.",
+                    "suggestions": [
+                        "Viết 5 dòng cảm nhận.",
+                        "Đánh giá mức độ tiết kiệm.",
+                        "Đặt mục tiêu tuần mới."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Tuần Sống Kỷ Luật",
+            "days": [
+                {
+                    "day": "Ngày 1",
+                    "title": "Dậy sớm đúng giờ",
+                    "progress": "1/7",
+                    "description": "Rèn thói quen đúng giờ, bắt đầu ngày mới chủ động như nếp sinh hoạt kỷ luật của Bác.",
+                    "quote": "Thời giờ quý báu lắm, không nên lãng phí dù chỉ một phút.",
+                    "suggestions": [
+                        "Đặt báo thức sớm hơn 30 phút.",
+                        "Không bấm hoãn báo thức.",
+                        "Ghi lại thời gian thức dậy."
+                    ]
+                },
+                {
+                    "day": "Ngày 2",
+                    "title": "Làm việc theo kế hoạch",
+                    "progress": "2/7",
+                    "description": "Sắp xếp công việc rõ ràng, làm việc nào dứt việc đó.",
+                    "quote": "Làm việc gì cũng phải có kế hoạch, có kiểm tra.",
+                    "suggestions": [
+                        "Liệt kê 3 việc quan trọng.",
+                        "Hoàn thành từng việc một.",
+                        "Không làm việc lan man."
+                    ]
+                },
+                {
+                    "day": "Ngày 3",
+                    "title": "Giữ lời hứa",
+                    "progress": "3/7",
+                    "description": "Tôn trọng lời nói của mình, dù là việc nhỏ.",
+                    "quote": "Nói thì phải làm.",
+                    "suggestions": [
+                        "Hoàn thành việc đã hứa.",
+                        "Không hứa nếu chưa chắc làm được.",
+                        "Tự đánh giá mức độ đúng hẹn."
+                    ]
+                },
+                {
+                    "day": "Ngày 4",
+                    "title": "Giờ nào việc nấy",
+                    "progress": "4/7",
+                    "description": "Phân biệt rõ thời gian làm việc và nghỉ ngơi.",
+                    "quote": "Làm việc phải có giờ, nghỉ ngơi cũng phải có giờ.",
+                    "suggestions": [
+                        "Không dùng mạng xã hội trong giờ làm.",
+                        "Nghỉ đúng giờ quy định.",
+                        "Theo dõi hiệu suất làm việc."
+                    ]
+                },
+                {
+                    "day": "Ngày 5",
+                    "title": "Hoàn thành việc trong ngày",
+                    "progress": "5/7",
+                    "description": "Không để việc hôm nay sang ngày mai.",
+                    "quote": "Việc hôm nay chớ để ngày mai.",
+                    "suggestions": [
+                        "Rà soát việc tồn.",
+                        "Ưu tiên việc chưa xong.",
+                        "Ghi chú nguyên nhân trì hoãn."
+                    ]
+                },
+                {
+                    "day": "Ngày 6",
+                    "title": "Tự kiểm điểm",
+                    "progress": "6/7",
+                    "description": "Nhìn lại bản thân để sửa mình.",
+                    "quote": "Phải thường xuyên tự phê bình và phê bình.",
+                    "suggestions": [
+                        "Viết 3 điều làm tốt.",
+                        "Viết 1 điều cần sửa.",
+                        "Đề ra cách khắc phục."
+                    ]
+                },
+                {
+                    "day": "Ngày 7",
+                    "title": "Tổng kết tuần",
+                    "progress": "7/7",
+                    "description": "Đánh giá mức độ kỷ luật của bản thân.",
+                    "quote": "Có kiểm điểm mới có tiến bộ.",
+                    "suggestions": [
+                        "Chấm điểm kỷ luật cá nhân.",
+                        "Rút ra 1 bài học.",
+                        "Đặt mục tiêu tuần sau."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Tuần Học Tập Suốt Đời",
+            "days": [
+                {
+                    "day": "Ngày 1",
+                    "title": "Đọc sách mỗi ngày",
+                    "progress": "1/7",
+                    "description": "Duy trì thói quen học hỏi không ngừng.",
+                    "quote": "Học nữa, học mãi.",
+                    "suggestions": [
+                        "Đọc ít nhất 20 phút.",
+                        "Chọn sách bổ ích.",
+                        "Ghi lại điều tâm đắc."
+                    ]
+                },
+                {
+                    "day": "Ngày 2",
+                    "title": "Học từ người xung quanh",
+                    "progress": "2/7",
+                    "description": "Quan sát và học hỏi từ thực tế cuộc sống.",
+                    "quote": "Học trong nhân dân.",
+                    "suggestions": [
+                        "Lắng nghe người khác chia sẻ.",
+                        "Ghi nhận kinh nghiệm hay.",
+                        "Áp dụng vào bản thân."
+                    ]
+                },
+                {
+                    "day": "Ngày 3",
+                    "title": "Học một kỹ năng mới",
+                    "progress": "3/7",
+                    "description": "Mỗi ngày tiến bộ một chút.",
+                    "quote": "Biết thì học, chưa biết thì hỏi.",
+                    "suggestions": [
+                        "Xem 1 video học tập.",
+                        "Thực hành ngay.",
+                        "Ghi lại kết quả."
+                    ]
+                },
+                {
+                    "day": "Ngày 4",
+                    "title": "Ghi chép khoa học",
+                    "progress": "4/7",
+                    "description": "Học đi đôi với ghi nhớ và hệ thống hóa.",
+                    "quote": "Học phải đi đôi với hành.",
+                    "suggestions": [
+                        "Tóm tắt ý chính.",
+                        "Dùng sơ đồ tư duy.",
+                        "Ôn lại ghi chép."
+                    ]
+                },
+                {
+                    "day": "Ngày 5",
+                    "title": "Đặt câu hỏi",
+                    "progress": "5/7",
+                    "description": "Hiểu bản chất vấn đề, không học thuộc lòng.",
+                    "quote": "Phải suy nghĩ cho chín.",
+                    "suggestions": [
+                        "Đặt ít nhất 1 câu hỏi.",
+                        "Tự tìm câu trả lời.",
+                        "Trao đổi với người khác."
+                    ]
+                },
+                {
+                    "day": "Ngày 6",
+                    "title": "Liên hệ thực tiễn",
+                    "progress": "6/7",
+                    "description": "Gắn kiến thức với cuộc sống.",
+                    "quote": "Lý luận phải gắn liền với thực tiễn.",
+                    "suggestions": [
+                        "Nêu ví dụ thực tế.",
+                        "Áp dụng vào công việc.",
+                        "Đánh giá hiệu quả."
+                    ]
+                },
+                {
+                    "day": "Ngày 7",
+                    "title": "Tổng kết tuần",
+                    "progress": "7/7",
+                    "description": "Nhìn lại quá trình học tập.",
+                    "quote": "Học để làm việc, làm người.",
+                    "suggestions": [
+                        "Liệt kê điều đã học.",
+                        "Đánh giá tiến bộ.",
+                        "Lên kế hoạch học tiếp."
+                    ]
+                }
+            ]
+        }
+    ]
+}

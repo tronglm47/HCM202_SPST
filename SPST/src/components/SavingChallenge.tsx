@@ -64,7 +64,7 @@ export function SavingChallenge() {
             className="paper-card relative overflow-hidden"
             style={{ animationDelay: `${index * 100}ms` }}
           >
-            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-lotus via-bamboo to-pine" />
+            <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-lotus via-bamboo to-pine" />
             <div className="flex items-start justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-pine/70">
@@ -83,7 +83,7 @@ export function SavingChallenge() {
         ))}
       </div>
 
-      <div className="rounded-[2rem] border border-pine/20 bg-pine/95 px-6 py-8 text-white shadow-xl shadow-pine/30">
+      <div className="rounded-4xl border border-pine/20 bg-pine/95 px-6 py-8 text-white shadow-xl shadow-pine/30">
         <h4 className="font-serif text-2xl">Nhật ký phản tư</h4>
         <p className="mt-2 text-sm text-bamboo">
           Mỗi tối viết ba dòng: hôm nay bạn tiết kiệm được gì, học được điều gì,
