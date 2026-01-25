@@ -14,8 +14,6 @@ export function RankingPage() {
     const [ranking, setRanking] = useState<RankingEntry[]>([])
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState<string | null>(null)
-    const [currentPage, setCurrentPage] = useState(1)
-    const itemsPerPage = 5
 
     useEffect(() => {
         const fetchRanking = async () => {
@@ -73,20 +71,6 @@ export function RankingPage() {
         return 'text-ink/40 font-medium'
     }
 
-    // Pagination logic
-    const totalPages = Math.ceil(ranking.length / itemsPerPage)
-    const startIndex = (currentPage - 1) * itemsPerPage
-    const endIndex = startIndex + itemsPerPage
-    const paginatedRanking = ranking.slice(startIndex, endIndex)
-
-    const handlePreviousPage = () => {
-        setCurrentPage((prev) => Math.max(prev - 1, 1))
-    }
-
-    const handleNextPage = () => {
-        setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-    }
-
     return (
         <main className="min-h-screen bg-linear-to-b from-parchment via-parchment/50 to-white">
             <div className="max-w-6xl mx-auto px-4 py-12">
@@ -108,6 +92,7 @@ export function RankingPage() {
                         <p className="font-medium">⚠️ {error}</p>
                     </div>
                 )}
+
                 {!loading && !error && ranking.length > 0 && (
                     <div className="mt-12 bg-white rounded-3xl shadow-2xl overflow-hidden border border-bamboo/10">
                         <div className="overflow-x-auto">
@@ -121,7 +106,7 @@ export function RankingPage() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {paginatedRanking.map((entry) => (
+                                    {ranking.map((entry) => (
                                         <tr
                                             key={entry.id}
                                             className={`border-b border-pine/5 transition ${getRowStyles(entry.rank)}`}
@@ -152,42 +137,6 @@ export function RankingPage() {
                             <div className="h-full flex-1 bg-bamboo/80"></div>
                             <div className="h-full flex-1 bg-bamboo"></div>
                         </div>
-
-                        {/* Pagination Controls */}
-                        {totalPages > 1 && (
-                            <div className="flex items-center justify-center gap-4 px-6 py-6">
-                                <button
-                                    onClick={handlePreviousPage}
-                                    disabled={currentPage === 1}
-                                    className="px-4 py-2 rounded-lg border border-bamboo/30 text-pine font-medium hover:bg-bamboo/10 disabled:opacity-50 disabled:cursor-not-allowed transition"
-                                >
-                                    ← Trước
-                                </button>
-
-                                <div className="flex items-center gap-2">
-                                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                                        <button
-                                            key={page}
-                                            onClick={() => setCurrentPage(page)}
-                                            className={`w-10 h-10 rounded-lg font-semibold transition ${currentPage === page
-                                                ? 'bg-bamboo text-white'
-                                                : 'border border-bamboo/30 text-pine hover:bg-bamboo/10'
-                                                }`}
-                                        >
-                                            {page}
-                                        </button>
-                                    ))}
-                                </div>
-
-                                <button
-                                    onClick={handleNextPage}
-                                    disabled={currentPage === totalPages}
-                                    className="px-4 py-2 rounded-lg border border-bamboo/30 text-pine font-medium hover:bg-bamboo/10 disabled:opacity-50 disabled:cursor-not-allowed transition"
-                                >
-                                    Sau →
-                                </button>
-                            </div>
-                        )}
                     </div>
                 )}
 
