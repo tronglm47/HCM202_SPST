@@ -124,7 +124,6 @@ export function QuickQuiz() {
   const postResult = async (
     durationSeconds: number,
     totalPlays: number,
-    finalPoints: number,
   ) => {
     if (isPosting) return
     setIsPosting(true)
@@ -188,7 +187,7 @@ export function QuickQuiz() {
 
     setElapsedTime(durationSeconds)
     setIsFinished(true)
-    await postResult(durationSeconds, finalAttempts, finalPoints)
+    await postResult(durationSeconds, finalAttempts)
   }
 
   const handleAnswer = async (answer: AnswerOption) => {
