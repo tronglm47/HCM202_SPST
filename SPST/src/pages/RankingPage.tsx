@@ -61,8 +61,8 @@ export function RankingPage() {
 
     const getRowStyles = (rank: number) => {
         if (rank === 1) return 'bg-linear-to-r from-bamboo/10 to-bamboo/5'
-        if (rank === 2) return 'bg-linear-to-r from-parchment/20 to-parchment/10'
-        if (rank === 3) return 'bg-linear-to-r from-lotus/10 to-lotus/5'
+        if (rank === 2) return 'bg-linear-to-r from-bamboo/10 to-bamboo/5'
+        if (rank === 3) return 'bg-linear-to-r from-bamboo/10 to-bamboo/5'
         return 'hover:bg-pine/5'
     }
 
