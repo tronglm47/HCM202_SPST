@@ -1,532 +1,322 @@
 {
-    "chapters": [
+  "chapters": [
+    {
+      "chapter_id": 1,
+      "chapter_name": "SINH HOẠT CÁ NHÂN",
+      "questions": [
         {
-            "chapter_id": 1,
-            "chapter_name": "SINH HOẠT CÁ NHÂN",
-            "questions": [
-                {
-                    "id": 1,
-                    "context": "Bữa sáng",
-                    "question": "Bạn sẽ chọn bữa sáng nào để bắt đầu ngày làm việc?",
-                    "options": [
-                        {
-                            "text": "A. Phở bò đặc biệt, cà phê ngoại"
-                        },
-                        {
-                            "text": "B. Cơm nguội, cà muối, trà nóng",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Bánh mì bơ sữa phục vụ tận phòng"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "context": "Trang phục",
-                    "question": "Bộ quần áo kaki của bạn đã sờn vai và cổ áo đã cũ, bạn xử lý thế nào?",
-                    "options": [
-                        {
-                            "text": "A. May bộ mới tương tự để giữ hình ảnh lãnh tụ"
-                        },
-                        {
-                            "text": "B. Lộn ngược cổ áo lại, vá chỗ sờn để dùng tiếp",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Chỉ dùng bộ cũ khi tiếp dân, dùng bộ mới khi họp"
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "context": "Chỗ ở",
-                    "question": "Khi về Thủ đô, bạn được sắp xếp ở trong Phủ Toàn quyền sang trọng, bạn quyết định ra sao?",
-                    "options": [
-                        {
-                            "text": "A. Ở lại để thuận tiện tiếp khách quốc tế"
-                        },
-                        {
-                            "text": "B. Chọn ở ngôi nhà nhỏ của người thợ điện trong vườn",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Cải tạo các phòng lớn thành phòng làm việc chung"
-                        }
-                    ]
-                },
-                {
-                    "id": 4,
-                    "context": "Vật dụng",
-                    "question": "Đôi dép cao su của bạn đã mòn vẹt quai, các đồng chí muốn thay đôi mới, bạn nói gì?",
-                    "options": [
-                        {
-                            "text": "A. Chấp thuận vì đôi cũ không còn đảm bảo an toàn"
-                        },
-                        {
-                            "text": "B. Đóng thêm đinh vào quai để tận dụng tiếp",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Giữ làm kỷ niệm và mua một đôi giày vải"
-                        }
-                    ]
-                },
-                {
-                    "id": 5,
-                    "context": "Di chuyển",
-                    "question": "Trên đường công tác xa, xe ô tô xóc mạnh do đường xấu, bạn xử lý thế nào?",
-                    "options": [
-                        {
-                            "text": "A. Yêu cầu cấp xe có hệ thống giảm xóc tốt hơn"
-                        },
-                        {
-                            "text": "B. Xuống đi bộ cùng anh em để rèn luyện và tiết kiệm xăng",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Nhắc nhở địa phương sớm tu sửa con đường này"
-                        }
-                    ]
-                },
-                {
-                    "id": 6,
-                    "context": "Văn phòng phẩm",
-                    "question": "Khi viết bản thảo hoặc thư tay, bạn chọn loại giấy nào để sử dụng?",
-                    "options": [
-                        {
-                            "text": "A. Giấy chuyên dụng có in tiêu đề phủ"
-                        },
-                        {
-                            "text": "B. Tận dụng mặt sau của bản tin cũ hoặc giấy nháp",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Giấy trắng khổ tiêu chuẩn để dễ lưu trữ"
-                        }
-                    ]
-                },
-                {
-                    "id": 7,
-                    "context": "Quà biếu",
-                    "question": "Nhân dân các địa phương gửi biếu nhiều đặc sản quý hiếm, bạn sẽ làm gì?",
-                    "options": [
-                        {
-                            "text": "A. Nhận và viết thư cảm ơn chân thành đến bà con"
-                        },
-                        {
-                            "text": "B. Gửi tặng lại cho các trại nhi đồng hoặc thương binh",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Nhận một phần nhỏ, còn lại gửi trả lại dân"
-                        }
-                    ]
-                },
-                {
-                    "id": 8,
-                    "context": "Trang trí ngày Tết",
-                    "question": "Dịp Tết Nguyên đán, bạn chỉ thị việc trang trí nơi ở và làm việc ra sao?",
-                    "options": [
-                        {
-                            "text": "A. Trang hoàng rực rỡ để tạo không khí phấn khởi"
-                        },
-                        {
-                            "text": "B. Chỉ một cành đào nhỏ, dành tiền tặng quà cho người nghèo",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Giữ nguyên trạng như ngày thường để tránh lãng phí"
-                        }
-                    ]
-                },
-                {
-                    "id": 9,
-                    "context": "Nghỉ ngơi khi đi công tác",
-                    "question": "Khi đi thăm địa phương vào ban đêm, bạn chọn nghỉ chân ở đâu?",
-                    "options": [
-                        {
-                            "text": "A. Nhà khách của UBND tỉnh để đảm bảo an ninh"
-                        },
-                        {
-                            "text": "B. Nghỉ tại nhà dân hoặc trụ sở xã đơn sơ",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Ngủ lại trên xe để sáng sớm đi làm ngay"
-                        }
-                    ]
-                },
-                {
-                    "id": 10,
-                    "context": "Sử dụng điện",
-                    "question": "Rời phòng làm việc thấy đèn vẫn sáng dù trời đã tỏ, bạn hành động thế nào?",
-                    "options": [
-                        {
-                            "text": "A. Nhắc nhở đồng chí giúp việc lần sau chú ý hơn"
-                        },
-                        {
-                            "text": "B. Tự tay tắt điện và duy trì thói quen này mỗi ngày",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Yêu cầu lắp cảm biến ánh sáng để tự động hóa"
-                        }
-                    ]
-                }
-            ]
+          "id": 1,
+          "context": "Bữa sáng",
+          "question": "Bạn sẽ chọn bữa sáng nào để bắt đầu ngày làm việc?",
+          "options": [
+            { "text": "A. Phở bò đặc biệt, cà phê ngoại", "is_correct": false },
+            { "text": "B. Bánh mì bơ sữa phục vụ tận phòng", "is_correct": false },
+            { "text": "C. Cơm nguội, cà muối, trà nóng", "is_correct": true }
+          ]
         },
         {
-            "chapter_id": 2,
-            "chapter_name": "CÔNG TÁC NGOẠI GIAO & TRỊ QUỐC",
-            "questions": [
-                {
-                    "id": 11,
-                    "context": "Chiêu đãi ngoại giao",
-                    "question": "Khi tiếp đón các nguyên thủ quốc gia, thực đơn tiệc chiêu đãi nên là gì?",
-                    "options": [
-                        {
-                            "text": "A. Những món đắt tiền nhất để thể hiện sự tôn trọng"
-                        },
-                        {
-                            "text": "B. Món ăn dân tộc giản dị, đậm đà bản sắc Việt",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Các món Âu - Á kết hợp theo tiêu chuẩn quốc tế"
-                        }
-                    ]
-                },
-                {
-                    "id": 12,
-                    "context": "Khen thưởng cán bộ",
-                    "question": "Để động viên một cán bộ vừa lập công lớn, bạn chọn món quà nào?",
-                    "options": [
-                        {
-                            "text": "A. Một khoản tiền thưởng lớn để cải thiện đời sống"
-                        },
-                        {
-                            "text": "B. Một cuốn sổ tay hoặc chiếc bút máy kèm lời ghi tên",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Đề bạt thẳng lên vị trí cao hơn ngay lập tức"
-                        }
-                    ]
-                },
-                {
-                    "id": 13,
-                    "context": "Tác phong đón tiếp",
-                    "question": "Thấy địa phương trải thảm đỏ và huy động học sinh đứng nắng đón mình, bạn xử lý sao?",
-                    "options": [
-                        {
-                            "text": "A. Nhanh chóng đi qua để các cháu sớm được nghỉ"
-                        },
-                        {
-                            "text": "B. Cuộn thảm lại, yêu cầu các cháu vào chỗ mát rồi mới nói chuyện",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Nghiêm khắc phê bình cán bộ tỉnh ngay tại chỗ"
-                        }
-                    ]
-                },
-                {
-                    "id": 14,
-                    "context": "Xử lý quà tặng công vụ",
-                    "question": "Một đoàn ngoại giao tặng bạn chiếc xe hơi đời mới, bạn quyết định thế nào?",
-                    "options": [
-                        {
-                            "text": "A. Nhận để làm phương tiện đưa đón khách quốc tế"
-                        },
-                        {
-                            "text": "B. Giao cho bộ phận hậu cần dùng chung, bản thân vẫn dùng xe cũ",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Từ chối thẳng thừng để giữ tiếng thanh liêm"
-                        }
-                    ]
-                },
-                {
-                    "id": 15,
-                    "context": "Công tâm trong dùng người",
-                    "question": "Người thân ở quê ra nhờ bạn xin cho một công việc tốt ở cơ quan nhà nước, bạn nói gì?",
-                    "options": [
-                        {
-                            "text": "A. Hướng dẫn họ nộp hồ sơ theo đúng quy trình"
-                        },
-                        {
-                            "text": "B. Giải thích rằng việc công không thể xen việc tư và từ chối",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Giới thiệu sang một cơ quan khác để tránh tiếng"
-                        }
-                    ]
-                },
-                {
-                    "id": 16,
-                    "context": "Tiếp dân",
-                    "question": "Có người dân muốn gặp trực tiếp để phản ánh nỗi oan sai, nhưng bạn đang có lịch họp, bạn làm gì?",
-                    "options": [
-                        {
-                            "text": "A. Yêu cầu ban tiếp dân giải quyết triệt để"
-                        },
-                        {
-                            "text": "B. Tạm hoãn họp hoặc dành giờ nghỉ để trực tiếp lắng nghe dân",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Hẹn dân vào một ngày khác khi lịch trình trống"
-                        }
-                    ]
-                },
-                {
-                    "id": 17,
-                    "context": "Phân bổ ngân sách",
-                    "question": "Chính phủ có nguồn thu mới, ý kiến đề xuất nâng cấp nội thất công sở, bạn quyết định ra sao?",
-                    "options": [
-                        {
-                            "text": "A. Đồng ý một phần cho những nơi quá xập xệ"
-                        },
-                        {
-                            "text": "B. Ưu tiên dồn lực cho quỹ xóa mù chữ và phát triển nông nghiệp",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Đầu tư vào công nghệ hiện đại cho các bộ ngành"
-                        }
-                    ]
-                },
-                {
-                    "id": 18,
-                    "context": "Kỷ luật thời gian",
-                    "question": "Trong một buổi họp quan trọng, bạn thấy nhiều đại biểu đi muộn, bạn sẽ làm gì?",
-                    "options": [
-                        {
-                            "text": "A. Phê bình chung cuối buổi họp để giữ thể diện cho họ"
-                        },
-                        {
-                            "text": "B. Bắt đầu đúng giờ và nhắc nhở giá trị của thời gian đối với dân",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Cho thư ký ghi tên những người muộn để trừ lương"
-                        }
-                    ]
-                },
-                {
-                    "id": 19,
-                    "context": "Đối mặt với khó khăn dân tộc",
-                    "question": "Khi đất nước đang gặp nạn đói, bạn kêu gọi toàn dân nhịn ăn cứu đói, bản thân bạn sẽ làm gì?",
-                    "options": [
-                        {
-                            "text": "A. Quyên góp tiền lương của cả năm"
-                        },
-                        {
-                            "text": "B. Thực hiện đúng mỗi tuần nhịn ăn một bữa để góp gạo",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Ra lệnh kiểm soát chặt chẽ các kho lương"
-                        }
-                    ]
-                },
-                {
-                    "id": 20,
-                    "context": "Phong thái diễn thuyết",
-                    "question": "Khi trình bày một chính sách mới trước nhân dân, bạn chọn cách diễn đạt nào?",
-                    "options": [
-                        {
-                            "text": "A. Phân tích số liệu và lý luận chính trị sắc bén"
-                        },
-                        {
-                            "text": "B. Dùng lời lẽ bình dân, ví dụ cụ thể như câu chuyện gia đình",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Đọc văn bản đã được chuẩn bị bởi đội ngũ chuyên gia"
-                        }
-                    ]
-                }
-            ]
+          "id": 2,
+          "context": "Trang phục",
+          "question": "Bộ quần áo kaki của bạn đã sờn vai và cổ áo đã cũ, bạn xử lý thế nào?",
+          "options": [
+            { "text": "A. Lộn ngược cổ áo lại, vá chỗ sờn để dùng tiếp", "is_correct": true },
+            { "text": "B. May bộ mới tương tự để giữ hình ảnh lãnh tụ", "is_correct": false },
+            { "text": "C. Chỉ dùng bộ cũ khi tiếp dân, dùng bộ mới khi họp", "is_correct": false }
+          ]
         },
         {
-            "chapter_id": 3,
-            "chapter_name": "TƯƠNG LAI & THẾ HỆ TRẺ",
-            "questions": [
-                {
-                    "id": 21,
-                    "context": "Giáo dục",
-                    "question": "Giữa bộn bề việc nước, bạn dành thời gian thế nào cho việc học chữ của nhân dân?",
-                    "options": [
-                        {
-                            "text": "A. Kêu gọi các trí thức tự nguyện đứng lớp vào ngày nghỉ"
-                        },
-                        {
-                            "text": "B. Trực tiếp viết tài liệu 'Kháng chiến hóa văn hóa' và đi kiểm tra các lớp bình dân học vụ",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Ra sắc lệnh bắt buộc xóa mù chữ trong vòng 6 tháng nếu không sẽ bị phạt"
-                        }
-                    ]
-                },
-                {
-                    "id": 22,
-                    "context": "Chăm sóc thiếu nhi",
-                    "question": "Có người tặng bạn một chiếc áo ấm rất đẹp giữa mùa đông giá rét, bạn xử lý sao?",
-                    "options": [
-                        {
-                            "text": "A. Nhận để giữ gìn sức khỏe phục vụ nhân dân lâu dài"
-                        },
-                        {
-                            "text": "B. Đem tặng lại cho một em bé liên lạc hoặc nhi đồng nghèo nhất vùng",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Để lại văn phòng làm quà tặng cho chiến sĩ xuất sắc nhất"
-                        }
-                    ]
-                },
-                {
-                    "id": 23,
-                    "context": "Viết thư cho học sinh",
-                    "question": "Trong thư gửi học sinh nhân ngày khai trường đầu tiên, bạn nhấn mạnh điều gì nhất?",
-                    "options": [
-                        {
-                            "text": "A. Phải học tập thật giỏi để sau này làm cán bộ giúp dân"
-                        },
-                        {
-                            "text": "B. Non sông có trở nên vẻ vang hay không chính là nhờ một phần lớn ở công học tập của các cháu",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Các cháu cần phải tuân thủ kỷ luật và đạo đức cách mạng tuyệt đối"
-                        }
-                    ]
-                },
-                {
-                    "id": 24,
-                    "context": "Tôn vinh cá nhân",
-                    "question": "Nhân dịp sinh nhật, các địa phương muốn đúc tượng và đặt tên đường theo tên bạn. Ý kiến của bạn?",
-                    "options": [
-                        {
-                            "text": "A. Chỉ đồng ý ở những nơi có truyền thống cách mạng lâu đời"
-                        },
-                        {
-                            "text": "B. Tuyệt đối không đồng ý, yêu cầu dùng kinh phí đó xây thêm trường học và bệnh viện",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Đồng ý nhưng yêu cầu chỉ làm những bức tượng nhỏ, giản dị"
-                        }
-                    ]
-                },
-                {
-                    "id": 25,
-                    "context": "Rèn luyện đạo đức",
-                    "question": "Bạn dạy thanh niên về đạo đức cách mạng, điều cốt lõi nhất là gì?",
-                    "options": [
-                        {
-                            "text": "A. Phải trung thành tuyệt đối với lý tưởng Đảng"
-                        },
-                        {
-                            "text": "B. Cần, Kiệm, Liêm, Chính, Chí công vô tư - làm việc gì cũng phải vì dân",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Phải học tập khoa học kỹ thuật hiện đại để bắt kịp thế giới"
-                        }
-                    ]
-                },
-                {
-                    "id": 26,
-                    "context": "Vui chơi của trẻ em",
-                    "question": "Thấy các cháu thiếu nhi đến chơi ở vườn Phủ Chủ tịch làm hỏng hoa, bạn phản ứng thế nào?",
-                    "options": [
-                        {
-                            "text": "A. Yêu cầu bảo vệ nhắc nhở các cháu giữ gìn tài sản công"
-                        },
-                        {
-                            "text": "B. Cười và bảo: Hoa hỏng thì trồng lại được, nhưng làm mất niềm vui của các cháu thì không nên",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Chỉ cho các cháu chơi ở những khu vực không có cây quý"
-                        }
-                    ]
-                },
-                {
-                    "id": 27,
-                    "context": "Sử dụng nhân tài trẻ",
-                    "question": "Một thanh niên trẻ có tài nhưng tính cách còn nông nổi, bạn sẽ dùng họ như thế nào?",
-                    "options": [
-                        {
-                            "text": "A. Để họ rèn luyện thêm ở cơ sở một thời gian dài rồi mới dùng"
-                        },
-                        {
-                            "text": "B. Tin tưởng giao việc, vừa dùng vừa uốn nắn như 'ngọc càng mài càng sáng'",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Chỉ giao những việc mang tính kỹ thuật, không giao trọng trách"
-                        }
-                    ]
-                },
-                {
-                    "id": 28,
-                    "context": "Bảo vệ môi trường",
-                    "question": "Bạn phát động phong trào 'Tết trồng cây', mục đích sâu xa nhất là gì?",
-                    "options": [
-                        {
-                            "text": "A. Để làm đẹp cảnh quan môi trường đô thị"
-                        },
-                        {
-                            "text": "B. Vì lợi ích mười năm thì phải trồng cây, vì lợi ích trăm năm thì phải trồng người",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Để có nguồn gỗ phục vụ kháng chiến lâu dài"
-                        }
-                    ]
-                },
-                {
-                    "id": 29,
-                    "context": "Văn hóa đọc",
-                    "question": "Bạn thấy cán bộ ít đọc sách, chỉ lo làm việc tay chân. Bạn khuyên họ thế nào?",
-                    "options": [
-                        {
-                            "text": "A. Yêu cầu mỗi tuần phải đọc hết một cuốn sách chính trị"
-                        },
-                        {
-                            "text": "B. Học ở trường, học ở sách vở, học lẫn nhau và học ở nhân dân - không học là lùi",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Phê bình nghiêm khắc trong cuộc họp chi bộ hằng tháng"
-                        }
-                    ]
-                },
-                {
-                    "id": 30,
-                    "context": "Di chúc",
-                    "question": "Trong những lời dặn dò cuối cùng, điều đầu tiên bạn nhắc đến là gì?",
-                    "options": [
-                        {
-                            "text": "A. Về việc tổ chức tang lễ sao cho thật trang trọng"
-                        },
-                        {
-                            "text": "B. Trước hết nói về Đảng, về sự đoàn kết như giữ gìn con ngươi của mắt mình",
-                            "is_correct": true
-                        },
-                        {
-                            "text": "C. Về kế hoạch phát triển kinh tế sau khi thắng lợi"
-                        }
-                    ]
-                }
-            ]
+          "id": 3,
+          "context": "Chỗ ở",
+          "question": "Khi về Thủ đô, bạn được sắp xếp ở trong Phủ Toàn quyền sang trọng, bạn quyết định ra sao?",
+          "options": [
+            { "text": "A. Ở lại để thuận tiện tiếp khách quốc tế", "is_correct": false },
+            { "text": "B. Cải tạo các phòng lớn thành phòng làm việc chung", "is_correct": false },
+            { "text": "C. Chọn ở ngôi nhà nhỏ của người thợ điện trong vườn", "is_correct": true }
+          ]
+        },
+        {
+          "id": 4,
+          "context": "Vật dụng",
+          "question": "Đôi dép cao su của bạn đã mòn vẹt quai, các đồng chí muốn thay đôi mới, bạn nói gì?",
+          "options": [
+            { "text": "A. Chấp thuận vì đôi cũ không còn đảm bảo an toàn", "is_correct": false },
+            { "text": "B. Đóng thêm đinh vào quai để tận dụng tiếp", "is_correct": true },
+            { "text": "C. Giữ làm kỷ niệm và mua một đôi giày vải", "is_correct": false }
+          ]
+        },
+        {
+          "id": 5,
+          "context": "Di chuyển",
+          "question": "Trên đường công tác xa, xe ô tô xóc mạnh do đường xấu, bạn xử lý thế nào?",
+          "options": [
+            { "text": "A. Yêu cầu cấp xe có hệ thống giảm xóc tốt hơn", "is_correct": false },
+            { "text": "B. Xuống đi bộ cùng anh em để rèn luyện và tiết kiệm xăng", "is_correct": true },
+            { "text": "C. Nhắc nhở địa phương sớm tu sửa con đường này", "is_correct": false }
+          ]
+        },
+        {
+          "id": 6,
+          "context": "Văn phòng phẩm",
+          "question": "Khi viết bản thảo hoặc thư tay, bạn chọn loại giấy nào để sử dụng?",
+          "options": [
+            { "text": "A. Giấy chuyên dụng có in tiêu đề phủ", "is_correct": false },
+            { "text": "B. Giấy trắng khổ tiêu chuẩn để dễ lưu trữ", "is_correct": false },
+            { "text": "C. Tận dụng mặt sau của bản tin cũ hoặc giấy nháp", "is_correct": true }
+          ]
+        },
+        {
+          "id": 7,
+          "context": "Quà biếu",
+          "question": "Nhân dân các địa phương gửi biếu nhiều đặc sản quý hiếm, bạn sẽ làm gì?",
+          "options": [
+            { "text": "A. Gửi tặng lại cho các trại nhi đồng hoặc thương binh", "is_correct": true },
+            { "text": "B. Nhận và viết thư cảm ơn chân thành đến bà con", "is_correct": false },
+            { "text": "C. Nhận một phần nhỏ, còn lại gửi trả lại dân", "is_correct": false }
+          ]
+        },
+        {
+          "id": 8,
+          "context": "Trang trí ngày Tết",
+          "question": "Dịp Tết Nguyên đán, bạn chỉ thị việc trang trí nơi ở và làm việc ra sao?",
+          "options": [
+            { "text": "A. Trang hoàng rực rỡ để tạo không khí phấn khởi", "is_correct": false },
+            { "text": "B. Chỉ một cành đào nhỏ, dành tiền tặng quà cho người nghèo", "is_correct": true },
+            { "text": "C. Giữ nguyên trạng như ngày thường để tránh lãng phí", "is_correct": false }
+          ]
+        },
+        {
+          "id": 9,
+          "context": "Nghỉ ngơi khi đi công tác",
+          "question": "Khi đi thăm địa phương vào ban đêm, bạn chọn nghỉ chân ở đâu?",
+          "options": [
+            { "text": "A. Nhà khách của UBND tỉnh để đảm bảo an ninh", "is_correct": false },
+            { "text": "B. Ngủ lại trên xe để sáng sớm đi làm ngay", "is_correct": false },
+            { "text": "C. Nghỉ tại nhà dân hoặc trụ sở xã đơn sơ", "is_correct": true }
+          ]
+        },
+        {
+          "id": 10,
+          "context": "Sử dụng điện",
+          "question": "Rời phòng làm việc thấy đèn vẫn sáng dù trời đã tỏ, bạn hành động thế nào?",
+          "options": [
+            { "text": "A. Tự tay tắt điện và duy trì thói quen này mỗi ngày", "is_correct": true },
+            { "text": "B. Nhắc nhở đồng chí giúp việc lần sau chú ý hơn", "is_correct": false },
+            { "text": "C. Yêu cầu lắp cảm biến ánh sáng để tự động hóa", "is_correct": false }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "chapter_id": 2,
+      "chapter_name": "CÔNG TÁC NGOẠI GIAO & TRỊ QUỐC",
+      "questions": [
+        {
+          "id": 11,
+          "context": "Chiêu đãi ngoại giao",
+          "question": "Khi tiếp đón các nguyên thủ quốc gia, thực đơn tiệc chiêu đãi nên là gì?",
+          "options": [
+            { "text": "A. Những món đắt tiền nhất để thể hiện sự tôn trọng", "is_correct": false },
+            { "text": "B. Món ăn dân tộc giản dị, đậm đà bản sắc Việt", "is_correct": true },
+            { "text": "C. Các món Âu - Á kết hợp theo tiêu chuẩn quốc tế", "is_correct": false }
+          ]
+        },
+        {
+          "id": 12,
+          "context": "Khen thưởng cán bộ",
+          "question": "Để động viên một cán bộ vừa lập công lớn, bạn chọn món quà nào?",
+          "options": [
+            { "text": "A. Một khoản tiền thưởng lớn để cải thiện đời sống", "is_correct": false },
+            { "text": "B. Đề bạt thẳng lên vị trí cao hơn ngay lập tức", "is_correct": false },
+            { "text": "C. Một cuốn sổ tay hoặc chiếc bút máy kèm lời ghi tên", "is_correct": true }
+          ]
+        },
+        {
+          "id": 13,
+          "context": "Tác phong đón tiếp",
+          "question": "Thấy địa phương trải thảm đỏ và huy động học sinh đứng nắng đón mình, bạn xử lý sao?",
+          "options": [
+            { "text": "A. Cuộn thảm lại, yêu cầu các cháu vào chỗ mát rồi mới nói chuyện", "is_correct": true },
+            { "text": "B. Nhanh chóng đi qua để các cháu sớm được nghỉ", "is_correct": false },
+            { "text": "C. Nghiêm khắc phê bình cán bộ tỉnh ngay tại chỗ", "is_correct": false }
+          ]
+        },
+        {
+          "id": 14,
+          "context": "Xử lý quà tặng công vụ",
+          "question": "Một đoàn ngoại giao tặng bạn chiếc xe hơi đời mới, bạn quyết định thế nào?",
+          "options": [
+            { "text": "A. Nhận để làm phương tiện đưa đón khách quốc tế", "is_correct": false },
+            { "text": "B. Giao cho bộ phận hậu cần dùng chung, bản thân vẫn dùng xe cũ", "is_correct": true },
+            { "text": "C. Từ chối thẳng thừng để giữ tiếng thanh liêm", "is_correct": false }
+          ]
+        },
+        {
+          "id": 15,
+          "context": "Công tâm trong dùng người",
+          "question": "Người thân ở quê ra nhờ bạn xin cho một công việc tốt ở cơ quan nhà nước, bạn nói gì?",
+          "options": [
+            { "text": "A. Hướng dẫn họ nộp hồ sơ theo đúng quy trình", "is_correct": false },
+            { "text": "B. Giới thiệu sang một cơ quan khác để tránh tiếng", "is_correct": false },
+            { "text": "C. Giải thích rằng việc công không thể xen việc tư và từ chối", "is_correct": true }
+          ]
+        },
+        {
+          "id": 16,
+          "context": "Tiếp dân",
+          "question": "Có người dân muốn gặp trực tiếp để phản ánh nỗi oan sai, nhưng bạn đang có lịch họp, bạn làm gì?",
+          "options": [
+            { "text": "A. Tạm hoãn họp hoặc dành giờ nghỉ để trực tiếp lắng nghe dân", "is_correct": true },
+            { "text": "B. Yêu cầu ban tiếp dân giải quyết triệt để", "is_correct": false },
+            { "text": "C. Hẹn dân vào một ngày khác khi lịch trình trống", "is_correct": false }
+          ]
+        },
+        {
+          "id": 17,
+          "context": "Phân bổ ngân sách",
+          "question": "Chính phủ có nguồn thu mới, ý kiến đề xuất nâng cấp nội thất công sở, bạn quyết định ra sao?",
+          "options": [
+            { "text": "A. Đồng ý một phần cho những nơi quá xập xệ", "is_correct": false },
+            { "text": "B. Đầu tư vào công nghệ hiện đại cho các bộ ngành", "is_correct": false },
+            { "text": "C. Ưu tiên dồn lực cho quỹ xóa mù chữ và phát triển nông nghiệp", "is_correct": true }
+          ]
+        },
+        {
+          "id": 18,
+          "context": "Kỷ luật thời gian",
+          "question": "Trong một buổi họp quan trọng, bạn thấy nhiều đại biểu đi muộn, bạn sẽ làm gì?",
+          "options": [
+            { "text": "A. Phê bình chung cuối buổi họp để giữ thể diện cho họ", "is_correct": false },
+            { "text": "B. Bắt đầu đúng giờ và nhắc nhở giá trị của thời gian đối với dân", "is_correct": true },
+            { "text": "C. Cho thư ký ghi tên những người muộn để trừ lương", "is_correct": false }
+          ]
+        },
+        {
+          "id": 19,
+          "context": "Đối mặt với khó khăn dân tộc",
+          "question": "Khi đất nước đang gặp nạn đói, bạn kêu gọi toàn dân nhịn ăn cứu đói, bản thân bạn sẽ làm gì?",
+          "options": [
+            { "text": "A. Quyên góp tiền lương của cả năm", "is_correct": false },
+            { "text": "B. Thực hiện đúng mỗi tuần nhịn ăn một bữa để góp gạo", "is_correct": true },
+            { "text": "C. Ra lệnh kiểm soát chặt chẽ các kho lương", "is_correct": false }
+          ]
+        },
+        {
+          "id": 20,
+          "context": "Phong thái diễn thuyết",
+          "question": "Khi trình bày một chính sách mới trước nhân dân, bạn chọn cách diễn đạt nào?",
+          "options": [
+            { "text": "A. Phân tích số liệu và lý luận chính trị sắc bén", "is_correct": false },
+            { "text": "B. Đọc văn bản đã được chuẩn bị bởi đội ngũ chuyên gia", "is_correct": false },
+            { "text": "C. Dùng lời lẽ bình dân, ví dụ cụ thể như câu chuyện gia đình", "is_correct": true }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 3,
+      "chapter_name": "TƯƠNG LAI & THẾ HỆ TRẺ",
+      "questions": [
+        {
+          "id": 21,
+          "context": "Giáo dục",
+          "question": "Giữa bộn bề việc nước, bạn dành thời gian thế nào cho việc học chữ của nhân dân?",
+          "options": [
+            { "text": "A. Trực tiếp viết tài liệu 'Kháng chiến hóa văn hóa' và đi kiểm tra các lớp bình dân học vụ", "is_correct": true },
+            { "text": "B. Kêu gọi các trí thức tự nguyện đứng lớp vào ngày nghỉ", "is_correct": false },
+            { "text": "C. Ra sắc lệnh bắt buộc xóa mù chữ trong vòng 6 tháng nếu không sẽ bị phạt", "is_correct": false }
+          ]
+        },
+        {
+          "id": 22,
+          "context": "Chăm sóc thiếu nhi",
+          "question": "Có người tặng bạn một chiếc áo ấm rất đẹp giữa mùa đông giá rét, bạn xử lý sao?",
+          "options": [
+            { "text": "A. Nhận để giữ gìn sức khỏe phục vụ nhân dân lâu dài", "is_correct": false },
+            { "text": "B. Đem tặng lại cho một em bé liên lạc hoặc nhi đồng nghèo nhất vùng", "is_correct": true },
+            { "text": "C. Để lại văn phòng làm quà tặng cho chiến sĩ xuất sắc nhất", "is_correct": false }
+          ]
+        },
+        {
+          "id": 23,
+          "context": "Viết thư cho học sinh",
+          "question": "Trong thư gửi học sinh nhân ngày khai trường đầu tiên, bạn nhấn mạnh điều gì nhất?",
+          "options": [
+            { "text": "A. Phải học tập thật giỏi để sau này làm cán bộ giúp dân", "is_correct": false },
+            { "text": "B. Các cháu cần phải tuân thủ kỷ luật và đạo đức cách mạng tuyệt đối", "is_correct": false },
+            { "text": "C. Non sông có trở nên vẻ vang hay không chính là nhờ một phần lớn ở công học tập của các cháu", "is_correct": true }
+          ]
+        },
+        {
+          "id": 24,
+          "context": "Tôn vinh cá nhân",
+          "question": "Nhân dịp sinh nhật, các địa phương muốn đúc tượng và đặt tên đường theo tên bạn. Ý kiến của bạn?",
+          "options": [
+            { "text": "A. Tuyệt đối không đồng ý, yêu cầu dùng kinh phí đó xây thêm trường học và bệnh viện", "is_correct": true },
+            { "text": "B. Chỉ đồng ý ở những nơi có truyền thống cách mạng lâu đời", "is_correct": false },
+            { "text": "C. Đồng ý nhưng yêu cầu chỉ làm những bức tượng nhỏ, giản dị", "is_correct": false }
+          ]
+        },
+        {
+          "id": 25,
+          "context": "Rèn luyện đạo đức",
+          "question": "Bạn dạy thanh niên về đạo đức cách mạng, điều cốt lõi nhất là gì?",
+          "options": [
+            { "text": "A. Phải trung thành tuyệt đối với lý tưởng Đảng", "is_correct": false },
+            { "text": "B. Cần, Kiệm, Liêm, Chính, Chí công vô tư - làm việc gì cũng phải vì dân", "is_correct": true },
+            { "text": "C. Phải học tập khoa học kỹ thuật hiện đại để bắt kịp thế giới", "is_correct": false }
+          ]
+        },
+        {
+          "id": 26,
+          "context": "Vui chơi của trẻ em",
+          "question": "Thấy các cháu thiếu nhi đến chơi ở vườn Phủ Chủ tịch làm hỏng hoa, bạn phản ứng thế nào?",
+          "options": [
+            { "text": "A. Yêu cầu bảo vệ nhắc nhở các cháu giữ gìn tài sản công", "is_correct": false },
+            { "text": "B. Chỉ cho các cháu chơi ở những khu vực không có cây quý", "is_correct": false },
+            { "text": "C. Cười và bảo: Hoa hỏng thì trồng lại được, nhưng làm mất niềm vui của các cháu thì không nên", "is_correct": true }
+          ]
+        },
+        {
+          "id": 27,
+          "context": "Sử dụng nhân tài trẻ",
+          "question": "Một thanh niên trẻ có tài nhưng tính cách còn nông nổi, bạn sẽ dùng họ như thế nào?",
+          "options": [
+            { "text": "A. Để họ rèn luyện thêm ở cơ sở một thời gian dài rồi mới dùng", "is_correct": false },
+            { "text": "B. Tin tưởng giao việc, vừa dùng vừa uốn nắn như 'ngọc càng mài càng sáng'", "is_correct": true },
+            { "text": "C. Chỉ giao những việc mang tính kỹ thuật, không giao trọng trách", "is_correct": false }
+          ]
+        },
+        {
+          "id": 28,
+          "context": "Bảo vệ môi trường",
+          "question": "Bạn phát động phong trào 'Tết trồng cây', mục đích sâu xa nhất là gì?",
+          "options": [
+            { "text": "A. Vì lợi ích mười năm thì phải trồng cây, vì lợi ích trăm năm thì phải trồng người", "is_correct": true },
+            { "text": "B. Để làm đẹp cảnh quan môi trường đô thị", "is_correct": false },
+            { "text": "C. Để có nguồn gỗ phục vụ kháng chiến lâu dài", "is_correct": false }
+          ]
+        },
+        {
+          "id": 29,
+          "context": "Văn hóa đọc",
+          "question": "Bạn thấy cán bộ ít đọc sách, chỉ lo làm việc tay chân. Bạn khuyên họ thế nào?",
+          "options": [
+            { "text": "A. Yêu cầu mỗi tuần phải đọc hết một cuốn sách chính trị", "is_correct": false },
+            { "text": "B. Học ở trường, học ở sách vở, học lẫn nhau và học ở nhân dân - không học là lùi", "is_correct": true },
+            { "text": "C. Phê bình nghiêm khắc trong cuộc họp chi bộ hằng tháng", "is_correct": false }
+          ]
+        },
+        {
+          "id": 30,
+          "context": "Di chúc",
+          "question": "Trong những lời dặn dò cuối cùng, điều đầu tiên bạn nhắc đến là gì?",
+          "options": [
+            { "text": "A. Về việc tổ chức tang lễ sao cho thật trang trọng", "is_correct": false },
+            { "text": "B. Về kế hoạch phát triển kinh tế sau khi thắng lợi", "is_correct": false },
+            { "text": "C. Trước hết nói về Đảng, về sự đoàn kết như giữ gìn con ngươi của mắt mình", "is_correct": true }
+          ]
+        }
+      ]
+    }
+  ]
 }
