@@ -2,320 +2,308 @@
   "chapters": [
     {
       "chapter_id": 1,
-      "chapter_name": "SINH HOẠT CÁ NHÂN",
+      "chapter_name": "ĐỨC TÍNH GIẢN DỊ CỦA CHỦ TỊCH HỒ CHÍ MINH",
       "questions": [
         {
           "id": 1,
-          "context": "Bữa sáng",
-          "question": "Bạn sẽ chọn bữa sáng nào để bắt đầu ngày làm việc?",
+          "context": "Bữa ăn hằng ngày",
+          "question": "Trong bữa ăn thường ngày, Bác Hồ lựa chọn cách ăn uống như thế nào?",
           "options": [
-            { "text": "A. Phở bò đặc biệt, cà phê ngoại", "is_correct": false },
-            { "text": "B. Bánh mì bơ sữa phục vụ tận phòng", "is_correct": false },
-            { "text": "C. Cơm nguội, cà muối, trà nóng", "is_correct": true }
+            { "text": "A. Ăn những món bổ dưỡng nhất để đảm bảo sức khỏe lãnh đạo đất nước", "is_correct": false },
+            { "text": "B. Ăn đơn giản, đạm bạc như cá kho, rau luộc, cà muối", "is_correct": true },
+            { "text": "C. Chỉ ăn riêng theo chế độ đặc biệt do bác sĩ chỉ định", "is_correct": false }
           ]
         },
         {
           "id": 2,
           "context": "Trang phục",
-          "question": "Bộ quần áo kaki của bạn đã sờn vai và cổ áo đã cũ, bạn xử lý thế nào?",
+          "question": "Trang phục thường ngày của Bác Hồ thể hiện điều gì?",
           "options": [
-            { "text": "A. Lộn ngược cổ áo lại, vá chỗ sờn để dùng tiếp", "is_correct": true },
-            { "text": "B. May bộ mới tương tự để giữ hình ảnh lãnh tụ", "is_correct": false },
-            { "text": "C. Chỉ dùng bộ cũ khi tiếp dân, dùng bộ mới khi họp", "is_correct": false }
+            { "text": "A. Sự cầu kỳ để thể hiện vị thế nguyên thủ quốc gia", "is_correct": false },
+            { "text": "B. Sự giản dị, gọn gàng, phù hợp với hoàn cảnh và công việc", "is_correct": true },
+            { "text": "C. Sự khác biệt để tạo dấu ấn cá nhân", "is_correct": false }
           ]
         },
         {
           "id": 3,
           "context": "Chỗ ở",
-          "question": "Khi về Thủ đô, bạn được sắp xếp ở trong Phủ Toàn quyền sang trọng, bạn quyết định ra sao?",
+          "question": "Khi làm việc tại Hà Nội, Bác Hồ đã chọn nơi ở như thế nào?",
           "options": [
-            { "text": "A. Ở lại để thuận tiện tiếp khách quốc tế", "is_correct": false },
-            { "text": "B. Cải tạo các phòng lớn thành phòng làm việc chung", "is_correct": false },
-            { "text": "C. Chọn ở ngôi nhà nhỏ của người thợ điện trong vườn", "is_correct": true }
+            { "text": "A. Ở trong khu nhà sang trọng để thuận tiện cho công tác đối ngoại", "is_correct": false },
+            { "text": "B. Ở trong ngôi nhà sàn nhỏ, giản dị, gần gũi thiên nhiên", "is_correct": true },
+            { "text": "C. Thường xuyên thay đổi nơi ở để đảm bảo an toàn", "is_correct": false }
           ]
         },
         {
           "id": 4,
-          "context": "Vật dụng",
-          "question": "Đôi dép cao su của bạn đã mòn vẹt quai, các đồng chí muốn thay đôi mới, bạn nói gì?",
+          "context": "Vật dụng cá nhân",
+          "question": "Những vật dụng sinh hoạt của Bác Hồ thường có đặc điểm gì?",
           "options": [
-            { "text": "A. Chấp thuận vì đôi cũ không còn đảm bảo an toàn", "is_correct": false },
-            { "text": "B. Đóng thêm đinh vào quai để tận dụng tiếp", "is_correct": true },
-            { "text": "C. Giữ làm kỷ niệm và mua một đôi giày vải", "is_correct": false }
+            { "text": "A. Được lựa chọn kỹ lưỡng, có giá trị sử dụng cao và bền", "is_correct": false },
+            { "text": "B. Đơn sơ, đủ dùng, không cầu kỳ hay xa xỉ", "is_correct": true },
+            { "text": "C. Luôn là đồ mới để đảm bảo hình ảnh lãnh tụ", "is_correct": false }
           ]
         },
         {
           "id": 5,
-          "context": "Di chuyển",
-          "question": "Trên đường công tác xa, xe ô tô xóc mạnh do đường xấu, bạn xử lý thế nào?",
+          "context": "Sử dụng đồ dùng",
+          "question": "Khi đồ dùng cá nhân đã cũ nhưng vẫn còn sử dụng được, Bác Hồ thường làm gì?",
           "options": [
-            { "text": "A. Yêu cầu cấp xe có hệ thống giảm xóc tốt hơn", "is_correct": false },
-            { "text": "B. Xuống đi bộ cùng anh em để rèn luyện và tiết kiệm xăng", "is_correct": true },
-            { "text": "C. Nhắc nhở địa phương sớm tu sửa con đường này", "is_correct": false }
+            { "text": "A. Thay ngay đồ mới để đảm bảo tiện nghi", "is_correct": false },
+            { "text": "B. Tiếp tục dùng, sửa chữa khi cần để tránh lãng phí", "is_correct": true },
+            { "text": "C. Giữ lại làm kỷ niệm và không dùng nữa", "is_correct": false }
           ]
         },
         {
           "id": 6,
-          "context": "Văn phòng phẩm",
-          "question": "Khi viết bản thảo hoặc thư tay, bạn chọn loại giấy nào để sử dụng?",
+          "context": "Giờ giấc sinh hoạt",
+          "question": "Tác phong sinh hoạt hằng ngày của Bác Hồ thể hiện đức tính gì?",
           "options": [
-            { "text": "A. Giấy chuyên dụng có in tiêu đề phủ", "is_correct": false },
-            { "text": "B. Giấy trắng khổ tiêu chuẩn để dễ lưu trữ", "is_correct": false },
-            { "text": "C. Tận dụng mặt sau của bản tin cũ hoặc giấy nháp", "is_correct": true }
+            { "text": "A. Linh hoạt, không cần theo giờ giấc cố định", "is_correct": false },
+            { "text": "B. Giản dị, ngăn nắp, đúng giờ và có kỷ luật", "is_correct": true },
+            { "text": "C. Phụ thuộc hoàn toàn vào lịch trình của cán bộ phục vụ", "is_correct": false }
           ]
         },
         {
           "id": 7,
-          "context": "Quà biếu",
-          "question": "Nhân dân các địa phương gửi biếu nhiều đặc sản quý hiếm, bạn sẽ làm gì?",
+          "context": "Tiếp khách",
+          "question": "Khi tiếp khách trong nước và quốc tế, phong cách của Bác Hồ thường là gì?",
           "options": [
-            { "text": "A. Gửi tặng lại cho các trại nhi đồng hoặc thương binh", "is_correct": true },
-            { "text": "B. Nhận và viết thư cảm ơn chân thành đến bà con", "is_correct": false },
-            { "text": "C. Nhận một phần nhỏ, còn lại gửi trả lại dân", "is_correct": false }
+            { "text": "A. Nghi thức long trọng, hình thức cầu kỳ", "is_correct": false },
+            { "text": "B. Chân tình, giản dị, gần gũi nhưng vẫn trang trọng", "is_correct": true },
+            { "text": "C. Giữ khoảng cách để đảm bảo uy nghiêm", "is_correct": false }
           ]
         },
         {
           "id": 8,
-          "context": "Trang trí ngày Tết",
-          "question": "Dịp Tết Nguyên đán, bạn chỉ thị việc trang trí nơi ở và làm việc ra sao?",
+          "context": "Quà tặng",
+          "question": "Khi được biếu tặng những món quà có giá trị, Bác Hồ thường xử lý như thế nào?",
           "options": [
-            { "text": "A. Trang hoàng rực rỡ để tạo không khí phấn khởi", "is_correct": false },
-            { "text": "B. Chỉ một cành đào nhỏ, dành tiền tặng quà cho người nghèo", "is_correct": true },
-            { "text": "C. Giữ nguyên trạng như ngày thường để tránh lãng phí", "is_correct": false }
+            { "text": "A. Nhận để sử dụng cho nhu cầu cá nhân", "is_correct": false },
+            { "text": "B. Chuyển tặng lại cho tập thể, thiếu nhi hoặc người có công", "is_correct": true },
+            { "text": "C. Cất giữ làm tài sản riêng", "is_correct": false }
           ]
         },
         {
           "id": 9,
-          "context": "Nghỉ ngơi khi đi công tác",
-          "question": "Khi đi thăm địa phương vào ban đêm, bạn chọn nghỉ chân ở đâu?",
+          "context": "Lời nói, cách ứng xử",
+          "question": "Trong giao tiếp hằng ngày, Bác Hồ thường sử dụng ngôn ngữ như thế nào?",
           "options": [
-            { "text": "A. Nhà khách của UBND tỉnh để đảm bảo an ninh", "is_correct": false },
-            { "text": "B. Ngủ lại trên xe để sáng sớm đi làm ngay", "is_correct": false },
-            { "text": "C. Nghỉ tại nhà dân hoặc trụ sở xã đơn sơ", "is_correct": true }
+            { "text": "A. Nhiều thuật ngữ chính trị, học thuật cao", "is_correct": false },
+            { "text": "B. Ngắn gọn, dễ hiểu, gần gũi với quần chúng", "is_correct": true },
+            { "text": "C. Chủ yếu dùng văn bản viết sẵn", "is_correct": false }
           ]
         },
         {
           "id": 10,
-          "context": "Sử dụng điện",
-          "question": "Rời phòng làm việc thấy đèn vẫn sáng dù trời đã tỏ, bạn hành động thế nào?",
+          "context": "Quan niệm sống",
+          "question": "Qua lối sống giản dị của mình, Bác Hồ muốn gửi gắm thông điệp gì?",
           "options": [
-            { "text": "A. Tự tay tắt điện và duy trì thói quen này mỗi ngày", "is_correct": true },
-            { "text": "B. Nhắc nhở đồng chí giúp việc lần sau chú ý hơn", "is_correct": false },
-            { "text": "C. Yêu cầu lắp cảm biến ánh sáng để tự động hóa", "is_correct": false }
+            { "text": "A. Người lãnh đạo phải sống khác biệt với nhân dân", "is_correct": false },
+            { "text": "B. Sống giản dị để dành sức lực, của cải cho sự nghiệp chung và vì nhân dân", "is_correct": true },
+            { "text": "C. Giản dị chỉ phù hợp trong thời kỳ khó khăn", "is_correct": false }
           ]
-        }
-      ]
-    },
-    {
-      "chapter_id": 2,
-      "chapter_name": "CÔNG TÁC NGOẠI GIAO & TRỊ QUỐC",
-      "questions": [
+        },
         {
           "id": 11,
-          "context": "Chiêu đãi ngoại giao",
-          "question": "Khi tiếp đón các nguyên thủ quốc gia, thực đơn tiệc chiêu đãi nên là gì?",
+          "context": "Bữa ăn tập thể",
+          "question": "Khi dùng bữa cùng cán bộ phục vụ, Bác Hồ thường căn dặn điều gì?",
           "options": [
-            { "text": "A. Những món đắt tiền nhất để thể hiện sự tôn trọng", "is_correct": false },
-            { "text": "B. Món ăn dân tộc giản dị, đậm đà bản sắc Việt", "is_correct": true },
-            { "text": "C. Các món Âu - Á kết hợp theo tiêu chuẩn quốc tế", "is_correct": false }
+            { "text": "A. Ăn đủ chất để đảm bảo sức khỏe làm việc lâu dài", "is_correct": false },
+            { "text": "B. Không để thừa cơm, thức ăn vì đó là mồ hôi nước mắt của dân", "is_correct": true },
+            { "text": "C. Ăn giống nhau để tạo sự bình đẳng trong tập thể", "is_correct": false }
           ]
         },
         {
           "id": 12,
-          "context": "Khen thưởng cán bộ",
-          "question": "Để động viên một cán bộ vừa lập công lớn, bạn chọn món quà nào?",
+          "context": "Tiêu dùng cá nhân",
+          "question": "Trong chi tiêu sinh hoạt, nguyên tắc nào phản ánh đúng nhất lối sống giản dị của Bác Hồ?",
           "options": [
-            { "text": "A. Một khoản tiền thưởng lớn để cải thiện đời sống", "is_correct": false },
-            { "text": "B. Đề bạt thẳng lên vị trí cao hơn ngay lập tức", "is_correct": false },
-            { "text": "C. Một cuốn sổ tay hoặc chiếc bút máy kèm lời ghi tên", "is_correct": true }
+            { "text": "A. Chỉ chi tiêu cho những gì thực sự cần thiết cho công việc và đời sống", "is_correct": true },
+            { "text": "B. Luôn ưu tiên tiết kiệm tối đa cho bản thân", "is_correct": false },
+            { "text": "C. Tránh sử dụng tiền công quỹ vào mục đích riêng", "is_correct": false }
           ]
         },
         {
           "id": 13,
-          "context": "Tác phong đón tiếp",
-          "question": "Thấy địa phương trải thảm đỏ và huy động học sinh đứng nắng đón mình, bạn xử lý sao?",
+          "context": "Nhà ở và nơi làm việc",
+          "question": "Việc Bác Hồ chọn ở nhà sàn thay vì Phủ Chủ tịch thể hiện sâu sắc nhất điều gì?",
           "options": [
-            { "text": "A. Cuộn thảm lại, yêu cầu các cháu vào chỗ mát rồi mới nói chuyện", "is_correct": true },
-            { "text": "B. Nhanh chóng đi qua để các cháu sớm được nghỉ", "is_correct": false },
-            { "text": "C. Nghiêm khắc phê bình cán bộ tỉnh ngay tại chỗ", "is_correct": false }
+            { "text": "A. Điều kiện sinh hoạt phù hợp với sức khỏe tuổi già", "is_correct": false },
+            { "text": "B. Quan niệm sống giản dị, không tách mình khỏi đời sống nhân dân", "is_correct": true },
+            { "text": "C. Mong muốn có không gian yên tĩnh để làm việc", "is_correct": false }
           ]
         },
         {
           "id": 14,
-          "context": "Xử lý quà tặng công vụ",
-          "question": "Một đoàn ngoại giao tặng bạn chiếc xe hơi đời mới, bạn quyết định thế nào?",
+          "context": "Sử dụng thời gian",
+          "question": "Cách Bác Hồ phân bổ thời gian sinh hoạt và làm việc phản ánh điều gì trong lối sống giản dị?",
           "options": [
-            { "text": "A. Nhận để làm phương tiện đưa đón khách quốc tế", "is_correct": false },
-            { "text": "B. Giao cho bộ phận hậu cần dùng chung, bản thân vẫn dùng xe cũ", "is_correct": true },
-            { "text": "C. Từ chối thẳng thừng để giữ tiếng thanh liêm", "is_correct": false }
+            { "text": "A. Làm việc nhiều hơn nghỉ ngơi để hoàn thành nhiệm vụ", "is_correct": false },
+            { "text": "B. Sống điều độ, khoa học, tránh xa lối sống hưởng thụ", "is_correct": true },
+            { "text": "C. Tuân thủ nghiêm ngặt thời gian biểu do tổ chức quy định", "is_correct": false }
           ]
         },
         {
           "id": 15,
-          "context": "Công tâm trong dùng người",
-          "question": "Người thân ở quê ra nhờ bạn xin cho một công việc tốt ở cơ quan nhà nước, bạn nói gì?",
+          "context": "Tiếp nhận sự chăm sóc",
+          "question": "Khi được đề nghị chăm sóc sinh hoạt chu đáo hơn, Bác Hồ thường thể hiện thái độ nào?",
           "options": [
-            { "text": "A. Hướng dẫn họ nộp hồ sơ theo đúng quy trình", "is_correct": false },
-            { "text": "B. Giới thiệu sang một cơ quan khác để tránh tiếng", "is_correct": false },
-            { "text": "C. Giải thích rằng việc công không thể xen việc tư và từ chối", "is_correct": true }
+            { "text": "A. Chấp nhận để đảm bảo sức khỏe lâu dài", "is_correct": false },
+            { "text": "B. Từ chối những chăm sóc mang tính hình thức, tốn kém", "is_correct": true },
+            { "text": "C. Giao toàn quyền cho cán bộ phục vụ sắp xếp", "is_correct": false }
           ]
         },
         {
           "id": 16,
-          "context": "Tiếp dân",
-          "question": "Có người dân muốn gặp trực tiếp để phản ánh nỗi oan sai, nhưng bạn đang có lịch họp, bạn làm gì?",
+          "context": "Quan hệ với cán bộ",
+          "question": "Trong sinh hoạt chung với cán bộ, lối sống giản dị của Bác thể hiện rõ nhất ở điểm nào?",
           "options": [
-            { "text": "A. Tạm hoãn họp hoặc dành giờ nghỉ để trực tiếp lắng nghe dân", "is_correct": true },
-            { "text": "B. Yêu cầu ban tiếp dân giải quyết triệt để", "is_correct": false },
-            { "text": "C. Hẹn dân vào một ngày khác khi lịch trình trống", "is_correct": false }
+            { "text": "A. Không tạo đặc quyền riêng cho bản thân trong sinh hoạt", "is_correct": true },
+            { "text": "B. Luôn giữ khoảng cách để đảm bảo kỷ cương", "is_correct": false },
+            { "text": "C. Ít tham gia sinh hoạt chung để tiết kiệm thời gian", "is_correct": false }
           ]
         },
         {
           "id": 17,
-          "context": "Phân bổ ngân sách",
-          "question": "Chính phủ có nguồn thu mới, ý kiến đề xuất nâng cấp nội thất công sở, bạn quyết định ra sao?",
+          "context": "Đánh giá cán bộ",
+          "question": "Bác Hồ thường phê phán biểu hiện nào là trái với đức tính giản dị?",
           "options": [
-            { "text": "A. Đồng ý một phần cho những nơi quá xập xệ", "is_correct": false },
-            { "text": "B. Đầu tư vào công nghệ hiện đại cho các bộ ngành", "is_correct": false },
-            { "text": "C. Ưu tiên dồn lực cho quỹ xóa mù chữ và phát triển nông nghiệp", "is_correct": true }
+            { "text": "A. Làm việc hình thức, phô trương, xa rời thực tế", "is_correct": true },
+            { "text": "B. Chú trọng hình ảnh cá nhân trước tập thể", "is_correct": false },
+            { "text": "C. Quan tâm đến điều kiện làm việc của bản thân", "is_correct": false }
           ]
         },
         {
           "id": 18,
-          "context": "Kỷ luật thời gian",
-          "question": "Trong một buổi họp quan trọng, bạn thấy nhiều đại biểu đi muộn, bạn sẽ làm gì?",
+          "context": "Đời sống tinh thần",
+          "question": "Hoạt động giải trí nào của Bác Hồ thể hiện rõ nét nhất lối sống giản dị?",
           "options": [
-            { "text": "A. Phê bình chung cuối buổi họp để giữ thể diện cho họ", "is_correct": false },
-            { "text": "B. Bắt đầu đúng giờ và nhắc nhở giá trị của thời gian đối với dân", "is_correct": true },
-            { "text": "C. Cho thư ký ghi tên những người muộn để trừ lương", "is_correct": false }
+            { "text": "A. Đọc sách, làm thơ, chăm sóc cây cối", "is_correct": true },
+            { "text": "B. Tham gia các hoạt động văn nghệ tập thể", "is_correct": false },
+            { "text": "C. Nghe báo cáo và tin tức thời sự mỗi ngày", "is_correct": false }
           ]
         },
         {
           "id": 19,
-          "context": "Đối mặt với khó khăn dân tộc",
-          "question": "Khi đất nước đang gặp nạn đói, bạn kêu gọi toàn dân nhịn ăn cứu đói, bản thân bạn sẽ làm gì?",
+          "context": "Quan điểm giáo dục",
+          "question": "Khi nói về lối sống của người cán bộ, Bác Hồ nhấn mạnh điều gì liên quan đến đức tính giản dị?",
           "options": [
-            { "text": "A. Quyên góp tiền lương của cả năm", "is_correct": false },
-            { "text": "B. Thực hiện đúng mỗi tuần nhịn ăn một bữa để góp gạo", "is_correct": true },
-            { "text": "C. Ra lệnh kiểm soát chặt chẽ các kho lương", "is_correct": false }
+            { "text": "A. Giản dị trong sinh hoạt để nêu gương cho quần chúng", "is_correct": true },
+            { "text": "B. Giản dị là phẩm chất tự nhiên, không cần rèn luyện", "is_correct": false },
+            { "text": "C. Giản dị chỉ cần thiết trong thời kỳ kháng chiến", "is_correct": false }
           ]
         },
         {
           "id": 20,
-          "context": "Phong thái diễn thuyết",
-          "question": "Khi trình bày một chính sách mới trước nhân dân, bạn chọn cách diễn đạt nào?",
+          "context": "Ý nghĩa tư tưởng",
+          "question": "Đức tính giản dị của Bác Hồ có ý nghĩa sâu xa nhất là gì?",
           "options": [
-            { "text": "A. Phân tích số liệu và lý luận chính trị sắc bén", "is_correct": false },
-            { "text": "B. Đọc văn bản đã được chuẩn bị bởi đội ngũ chuyên gia", "is_correct": false },
-            { "text": "C. Dùng lời lẽ bình dân, ví dụ cụ thể như câu chuyện gia đình", "is_correct": true }
+            { "text": "A. Thể hiện phong cách sống cá nhân đặc biệt", "is_correct": false },
+            { "text": "B. Gắn bó máu thịt với nhân dân, chống chủ nghĩa cá nhân và xa hoa", "is_correct": true },
+            { "text": "C. Phù hợp với điều kiện kinh tế của đất nước lúc bấy giờ", "is_correct": false }
           ]
-        }
+        },
+        {
+      "id": 21,
+      "context": "Quan niệm về tiện nghi",
+      "question": "Theo Bác Hồ, điều gì quyết định mức độ cần thiết của tiện nghi trong sinh hoạt cá nhân?",
+      "options": [
+        { "text": "A. Địa vị và trách nhiệm của người lãnh đạo", "is_correct": false },
+        { "text": "B. Mức độ phục vụ cho công việc và lợi ích chung", "is_correct": true },
+        { "text": "C. Điều kiện kinh tế cho phép ở từng giai đoạn", "is_correct": false }
       ]
     },
     {
-      "chapter_id": 3,
-      "chapter_name": "TƯƠNG LAI & THẾ HỆ TRẺ",
-      "questions": [
-        {
-          "id": 21,
-          "context": "Giáo dục",
-          "question": "Giữa bộn bề việc nước, bạn dành thời gian thế nào cho việc học chữ của nhân dân?",
-          "options": [
-            { "text": "A. Trực tiếp viết tài liệu 'Kháng chiến hóa văn hóa' và đi kiểm tra các lớp bình dân học vụ", "is_correct": true },
-            { "text": "B. Kêu gọi các trí thức tự nguyện đứng lớp vào ngày nghỉ", "is_correct": false },
-            { "text": "C. Ra sắc lệnh bắt buộc xóa mù chữ trong vòng 6 tháng nếu không sẽ bị phạt", "is_correct": false }
-          ]
-        },
-        {
-          "id": 22,
-          "context": "Chăm sóc thiếu nhi",
-          "question": "Có người tặng bạn một chiếc áo ấm rất đẹp giữa mùa đông giá rét, bạn xử lý sao?",
-          "options": [
-            { "text": "A. Nhận để giữ gìn sức khỏe phục vụ nhân dân lâu dài", "is_correct": false },
-            { "text": "B. Đem tặng lại cho một em bé liên lạc hoặc nhi đồng nghèo nhất vùng", "is_correct": true },
-            { "text": "C. Để lại văn phòng làm quà tặng cho chiến sĩ xuất sắc nhất", "is_correct": false }
-          ]
-        },
-        {
-          "id": 23,
-          "context": "Viết thư cho học sinh",
-          "question": "Trong thư gửi học sinh nhân ngày khai trường đầu tiên, bạn nhấn mạnh điều gì nhất?",
-          "options": [
-            { "text": "A. Phải học tập thật giỏi để sau này làm cán bộ giúp dân", "is_correct": false },
-            { "text": "B. Các cháu cần phải tuân thủ kỷ luật và đạo đức cách mạng tuyệt đối", "is_correct": false },
-            { "text": "C. Non sông có trở nên vẻ vang hay không chính là nhờ một phần lớn ở công học tập của các cháu", "is_correct": true }
-          ]
-        },
-        {
-          "id": 24,
-          "context": "Tôn vinh cá nhân",
-          "question": "Nhân dịp sinh nhật, các địa phương muốn đúc tượng và đặt tên đường theo tên bạn. Ý kiến của bạn?",
-          "options": [
-            { "text": "A. Tuyệt đối không đồng ý, yêu cầu dùng kinh phí đó xây thêm trường học và bệnh viện", "is_correct": true },
-            { "text": "B. Chỉ đồng ý ở những nơi có truyền thống cách mạng lâu đời", "is_correct": false },
-            { "text": "C. Đồng ý nhưng yêu cầu chỉ làm những bức tượng nhỏ, giản dị", "is_correct": false }
-          ]
-        },
-        {
-          "id": 25,
-          "context": "Rèn luyện đạo đức",
-          "question": "Bạn dạy thanh niên về đạo đức cách mạng, điều cốt lõi nhất là gì?",
-          "options": [
-            { "text": "A. Phải trung thành tuyệt đối với lý tưởng Đảng", "is_correct": false },
-            { "text": "B. Cần, Kiệm, Liêm, Chính, Chí công vô tư - làm việc gì cũng phải vì dân", "is_correct": true },
-            { "text": "C. Phải học tập khoa học kỹ thuật hiện đại để bắt kịp thế giới", "is_correct": false }
-          ]
-        },
-        {
-          "id": 26,
-          "context": "Vui chơi của trẻ em",
-          "question": "Thấy các cháu thiếu nhi đến chơi ở vườn Phủ Chủ tịch làm hỏng hoa, bạn phản ứng thế nào?",
-          "options": [
-            { "text": "A. Yêu cầu bảo vệ nhắc nhở các cháu giữ gìn tài sản công", "is_correct": false },
-            { "text": "B. Chỉ cho các cháu chơi ở những khu vực không có cây quý", "is_correct": false },
-            { "text": "C. Cười và bảo: Hoa hỏng thì trồng lại được, nhưng làm mất niềm vui của các cháu thì không nên", "is_correct": true }
-          ]
-        },
-        {
-          "id": 27,
-          "context": "Sử dụng nhân tài trẻ",
-          "question": "Một thanh niên trẻ có tài nhưng tính cách còn nông nổi, bạn sẽ dùng họ như thế nào?",
-          "options": [
-            { "text": "A. Để họ rèn luyện thêm ở cơ sở một thời gian dài rồi mới dùng", "is_correct": false },
-            { "text": "B. Tin tưởng giao việc, vừa dùng vừa uốn nắn như 'ngọc càng mài càng sáng'", "is_correct": true },
-            { "text": "C. Chỉ giao những việc mang tính kỹ thuật, không giao trọng trách", "is_correct": false }
-          ]
-        },
-        {
-          "id": 28,
-          "context": "Bảo vệ môi trường",
-          "question": "Bạn phát động phong trào 'Tết trồng cây', mục đích sâu xa nhất là gì?",
-          "options": [
-            { "text": "A. Vì lợi ích mười năm thì phải trồng cây, vì lợi ích trăm năm thì phải trồng người", "is_correct": true },
-            { "text": "B. Để làm đẹp cảnh quan môi trường đô thị", "is_correct": false },
-            { "text": "C. Để có nguồn gỗ phục vụ kháng chiến lâu dài", "is_correct": false }
-          ]
-        },
-        {
-          "id": 29,
-          "context": "Văn hóa đọc",
-          "question": "Bạn thấy cán bộ ít đọc sách, chỉ lo làm việc tay chân. Bạn khuyên họ thế nào?",
-          "options": [
-            { "text": "A. Yêu cầu mỗi tuần phải đọc hết một cuốn sách chính trị", "is_correct": false },
-            { "text": "B. Học ở trường, học ở sách vở, học lẫn nhau và học ở nhân dân - không học là lùi", "is_correct": true },
-            { "text": "C. Phê bình nghiêm khắc trong cuộc họp chi bộ hằng tháng", "is_correct": false }
-          ]
-        },
-        {
-          "id": 30,
-          "context": "Di chúc",
-          "question": "Trong những lời dặn dò cuối cùng, điều đầu tiên bạn nhắc đến là gì?",
-          "options": [
-            { "text": "A. Về việc tổ chức tang lễ sao cho thật trang trọng", "is_correct": false },
-            { "text": "B. Về kế hoạch phát triển kinh tế sau khi thắng lợi", "is_correct": false },
-            { "text": "C. Trước hết nói về Đảng, về sự đoàn kết như giữ gìn con ngươi của mắt mình", "is_correct": true }
-          ]
-        }
+      "id": 22,
+      "context": "Giản dị và hiệu quả công việc",
+      "question": "Lối sống giản dị của Bác Hồ có tác động như thế nào đến hiệu quả lãnh đạo?",
+      "options": [
+        { "text": "A. Giúp tiết kiệm thời gian cho các nghi thức không cần thiết", "is_correct": false },
+        { "text": "B. Tạo sự gần gũi, từ đó hiểu dân và quyết sách sát thực tiễn hơn", "is_correct": true },
+        { "text": "C. Làm giảm áp lực hình ảnh đối với người đứng đầu", "is_correct": false }
+      ]
+    },
+    {
+      "id": 23,
+      "context": "Ranh giới giữa giản dị và khắc khổ",
+      "question": "Bác Hồ phân biệt giản dị với khắc khổ như thế nào?",
+      "options": [
+        { "text": "A. Giản dị là tiết kiệm, khắc khổ là tự làm khó bản thân", "is_correct": false },
+        { "text": "B. Giản dị là vừa đủ, hợp lý; khắc khổ là cực đoan, không cần thiết", "is_correct": true },
+        { "text": "C. Hai khái niệm này về cơ bản là giống nhau", "is_correct": false }
+      ]
+    },
+    {
+      "id": 24,
+      "context": "Giản dị trong tổ chức công việc",
+      "question": "Trong phong cách làm việc, biểu hiện nào phản ánh rõ nhất tinh thần giản dị của Bác Hồ?",
+      "options": [
+        { "text": "A. Giảm tối đa thủ tục rườm rà để tập trung giải quyết vấn đề cốt lõi", "is_correct": true },
+        { "text": "B. Phân công công việc rõ ràng theo cấp bậc", "is_correct": false },
+        { "text": "C. Làm việc chủ yếu thông qua văn bản hành chính", "is_correct": false }
+      ]
+    },
+    {
+      "id": 25,
+      "context": "Quan hệ với nhân dân",
+      "question": "Đức tính giản dị của Bác Hồ thể hiện rõ nhất trong mối quan hệ nào?",
+      "options": [
+        { "text": "A. Với các nguyên thủ và lãnh đạo quốc tế", "is_correct": false },
+        { "text": "B. Với nhân dân lao động, đặc biệt là người nghèo", "is_correct": true },
+        { "text": "C. Với đội ngũ cán bộ cấp cao", "is_correct": false }
+      ]
+    },
+    {
+      "id": 26,
+      "context": "Thái độ trước sự tôn vinh",
+      "question": "Trước những đề xuất tôn vinh cá nhân, thái độ của Bác Hồ phản ánh điều gì về lối sống giản dị?",
+      "options": [
+        { "text": "A. Không muốn bản thân trở thành trung tâm chú ý", "is_correct": false },
+        { "text": "B. Đặt lợi ích chung lên trên danh tiếng và hình thức cá nhân", "is_correct": true },
+        { "text": "C. Quan niệm khiêm tốn là phẩm chất riêng của cá nhân", "is_correct": false }
+      ]
+    },
+    {
+      "id": 27,
+      "context": "Giản dị và nêu gương",
+      "question": "Vì sao Bác Hồ coi lối sống giản dị là một hình thức giáo dục hiệu quả?",
+      "options": [
+        { "text": "A. Vì dễ tạo thiện cảm với quần chúng", "is_correct": false },
+        { "text": "B. Vì nêu gương sống có sức thuyết phục hơn lời nói", "is_correct": true },
+        { "text": "C. Vì giúp giảm khoảng cách giữa lãnh đạo và cán bộ", "is_correct": false }
+      ]
+    },
+    {
+      "id": 28,
+      "context": "Giản dị trong văn hóa ứng xử",
+      "question": "Biểu hiện nào sau đây thể hiện đúng tinh thần giản dị trong văn hóa ứng xử của Bác Hồ?",
+      "options": [
+        { "text": "A. Giữ nghi thức chuẩn mực trong mọi hoàn cảnh", "is_correct": false },
+        { "text": "B. Linh hoạt, tự nhiên nhưng luôn tôn trọng người đối diện", "is_correct": true },
+        { "text": "C. Tránh giao tiếp để tập trung cho công việc", "is_correct": false }
+      ]
+    },
+    {
+      "id": 29,
+      "context": "Giản dị và đạo đức cách mạng",
+      "question": "Trong hệ giá trị đạo đức cách mạng, đức tính giản dị của Bác Hồ gắn chặt nhất với phẩm chất nào?",
+      "options": [
+        { "text": "A. Cần, Kiệm, Liêm, Chính", "is_correct": true },
+        { "text": "B. Trung thành và kỷ luật", "is_correct": false },
+        { "text": "C. Sáng tạo và quyết đoán", "is_correct": false }
+      ]
+    },
+    {
+      "id": 30,
+      "context": "Ý nghĩa hiện đại",
+      "question": "Trong bối cảnh hiện nay, học tập đức tính giản dị của Bác Hồ cần được hiểu như thế nào?",
+      "options": [
+        { "text": "A. Giảm tối đa nhu cầu cá nhân trong mọi hoàn cảnh", "is_correct": false },
+        { "text": "B. Sống và làm việc có chừng mực, chống hình thức, lãng phí", "is_correct": true },
+        { "text": "C. Quay lại lối sống giản đơn của thời kỳ bao cấp", "is_correct": false }
+      ]
+    }
       ]
     }
   ]

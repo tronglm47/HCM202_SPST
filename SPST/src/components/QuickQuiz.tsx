@@ -45,6 +45,9 @@ export function QuickQuiz() {
   const [isPosting, setIsPosting] = useState(false)
   const [postError, setPostError] = useState<string | null>(null)
   const [posted, setPosted] = useState(false)
+  const [finalResult, setFinalResult] = useState<'success' | 'fail' | null>(
+    null,
+  )
 
   const rankingEndpoint =
     'https://6727111d302d03037e6f3df4.mockapi.io/api/v1/ranking'
@@ -176,7 +179,7 @@ export function QuickQuiz() {
     }
   }
 
-  const finishGame = async (finalAttempts: number) => {
+  const finishGame = async (finalAttempts: number, finalPoints: number) => {
     if (isFinished) return
     const endTime = Date.now()
     const effectiveStart = startTime ?? endTime
@@ -187,6 +190,12 @@ export function QuickQuiz() {
 
     setElapsedTime(durationSeconds)
     setIsFinished(true)
+    const hasCompletedAll = finalAttempts >= questions.length
+    if (hasCompletedAll && finalPoints > 0) {
+      setFinalResult('success')
+    } else if (finalPoints <= 0) {
+      setFinalResult('fail')
+    }
     await postResult(durationSeconds, finalAttempts)
   }
 
@@ -215,7 +224,7 @@ export function QuickQuiz() {
     setHasAnswered(true)
 
     if (nextPoints <= 0) {
-      await finishGame(nextAttempts)
+      await finishGame(nextAttempts, nextPoints)
       return
     }
   }
@@ -224,7 +233,7 @@ export function QuickQuiz() {
     if (isFinished || !hasAnswered) return
 
     if (currentIndex >= questions.length - 1) {
-      await finishGame(attempts)
+      await finishGame(attempts, points)
       return
     }
 
@@ -242,6 +251,28 @@ export function QuickQuiz() {
       id="quiz"
       className="section-shell space-y-10 scroll-mt-24 bg-white/85"
     >
+      {isFinished && finalResult && (
+        <div
+          className="fixed inset-0 z-50 flex min-h-screen w-screen items-center justify-center bg-pine/90 px-4 text-center text-white backdrop-blur-sm"
+          onClick={() => setFinalResult(null)}
+        >
+          <div
+            className="w-full max-w-2xl space-y-4 rounded-[2rem] border border-white/20 bg-white/10 p-8 shadow-2xl"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <h3 className="font-serif text-3xl">
+              {finalResult === 'success'
+                ? 'Chúc mừng bạn đã tiếp thu bài học về đức tính giản dị của Bác'
+                : 'Thất bại, hãy thử lại khi đã tìm hiểu thêm những bài học nhé!'}
+            </h3>
+            {finalResult === 'success' && (
+              <p className="text-base text-bamboo/90">
+                Cố gắng phát huy bạn nhé!
+              </p>
+            )}
+          </div>
+        </div>
+      )}
       {!isNameConfirmed && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-pine/80 px-4 backdrop-blur-sm">
           <form
