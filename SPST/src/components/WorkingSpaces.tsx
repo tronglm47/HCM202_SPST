@@ -33,7 +33,7 @@ export function WorkingSpaces() {
       <SectionHeading
         eyebrow="Không gian sống"
         title="Những góc bình yên quanh Bác"
-        description="Mỗi góc nhỏ ở Phủ Chủ tịch đều mang hơi thở của sự giản dị, đậm nét văn hóa Việt. Hãy chèn những bức ảnh thật đẹp vào các khung bên dưới."
+        description="Mỗi góc nhỏ ở Phủ Chủ tịch đều mang hơi thở của sự giản dị, đậm nét văn hóa Việt"
       />
 
       <div className="grid gap-8 lg:grid-cols-3">
