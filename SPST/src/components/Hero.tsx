@@ -2,7 +2,7 @@ const heroImage =
   'https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/473846zFS/su-gian-di-cua-bac-ho-387158.jpg'
 
 const heroStats = [
-  { labelLine1: 'Giờ thức', labelLine2: 'dậy', value: '04:30' },
+  { labelLine1: 'Giờ thức', labelLine2: 'dậy', value: '05:30' },
   { labelLine1: 'Thời gian', labelLine2: 'đọc - viết', value: '5h/ngày' },
   { labelLine1: 'Phong cách', labelLine2: 'ăn uống', value: 'Đạm bạc' },
 ]
