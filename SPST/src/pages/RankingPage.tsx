@@ -23,8 +23,13 @@ export function RankingPage() {
                 if (!response.ok) throw new Error('Failed to fetch ranking')
 
                 const data = await response.json()
-                // Sort by point descending to ensure correct ranking
-                const sortedData = data.sort((a: any, b: any) => b.point - a.point)
+                // Sort by point (rounds) descending, then by time ascending if points are equal
+                const sortedData = data.sort((a: any, b: any) => {
+                    if (b.point !== a.point) {
+                        return b.point - a.point // More rounds = higher rank
+                    }
+                    return a.time - b.time // Less time = higher rank
+                })
                 const processedData = sortedData.map((item: any, index: number) => {
                     // Convert time (seconds) to MM:SS format
                     const minutes = Math.floor(item.time / 60)
