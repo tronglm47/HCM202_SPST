@@ -8,7 +8,7 @@ export function Footer() {
         Lấy cảm hứng từ môn Tư tưởng Hồ Chí Minh
       </p>
       <p className="mt-3 text-xs text-ink/60">
-        Tác giả: Nhóm 6 gồm Minh Khoa, Quốc Huy, Minh Trọng, Hỉa Triều, Kim Hằng.
+        Tác giả: Nhóm 6 gồm Minh Khoa, Quốc Huy, Minh Trọng, Hải Triều, Kim Hằng.
       </p>
     </footer>
   )
