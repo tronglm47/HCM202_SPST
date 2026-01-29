@@ -325,6 +325,8 @@ const legacyQuizData = {
   ],
 }
 
+void legacyQuizData
+
 const quizData = quizJson
 
 export function QuickQuiz() {
@@ -344,6 +346,7 @@ export function QuickQuiz() {
   const [selectedAnswer, setSelectedAnswer] = useState<AnswerOption | null>(
     null,
   )
+  const [showResultModal, setShowResultModal] = useState(false)
   const [startTime, setStartTime] = useState<number | null>(null)
   const [elapsedTime, setElapsedTime] = useState<number | null>(null)
   const [isPosting, setIsPosting] = useState(false)
@@ -415,11 +418,7 @@ export function QuickQuiz() {
     return data
   }
 
-  const postResult = async (
-    durationSeconds: number,
-    totalPlays: number,
-    finalPoints: number,
-  ) => {
+  const postResult = async (durationSeconds: number, totalPlays: number) => {
     if (isPosting) return
     setIsPosting(true)
     setPostError(null)
@@ -471,7 +470,7 @@ export function QuickQuiz() {
     }
   }
 
-  const finishGame = async (finalAttempts: number, finalPoints: number) => {
+  const finishGame = async (finalAttempts: number) => {
     if (isFinished) return
     const endTime = Date.now()
     const effectiveStart = startTime ?? endTime
@@ -482,7 +481,8 @@ export function QuickQuiz() {
 
     setElapsedTime(durationSeconds)
     setIsFinished(true)
-    await postResult(durationSeconds, finalAttempts, finalPoints)
+    setShowResultModal(true)
+    await postResult(durationSeconds, finalAttempts)
   }
 
   const handleAnswer = async (answer: AnswerOption) => {
@@ -510,7 +510,7 @@ export function QuickQuiz() {
     setHasAnswered(true)
 
     if (nextPoints <= 0) {
-      await finishGame(nextAttempts, nextPoints)
+      await finishGame(nextAttempts)
       return
     }
   }
@@ -519,7 +519,7 @@ export function QuickQuiz() {
     if (isFinished || !hasAnswered) return
 
     if (currentIndex >= questions.length - 1) {
-      await finishGame(attempts, points)
+      await finishGame(attempts)
       return
     }
 
@@ -531,6 +531,7 @@ export function QuickQuiz() {
   }
 
   const currentQuestion = questions[currentIndex]
+  const hasCompletedAll = attempts >= questions.length && points > 0
 
   return (
     <section
@@ -577,6 +578,48 @@ export function QuickQuiz() {
 
       {isNameConfirmed && currentQuestion && (
         <>
+          {isFinished && showResultModal && (
+            <div className="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-pine/70 px-4 backdrop-blur-sm">
+              <div className="w-full max-w-lg space-y-4 rounded-[2rem] border border-bamboo/30 bg-white p-6 text-center shadow-2xl">
+                <p className="eyebrow text-pine/60">Kết quả</p>
+                <h3 className="font-serif text-2xl text-pine">
+                  {hasCompletedAll
+                    ? 'Thành công! Bạn đã hoàn thành 30 câu.'
+                    : 'Thất bại, hãy thử lại khi đã tìm hiểu thêm nhé!'}
+                </h3>
+                {elapsedTime !== null && (
+                  <p className="text-sm text-ink/70">
+                    Bạn đã đạt được {attempts} lượt với thành tích {elapsedTime}
+                    s là thời gian hoàn thành.
+                  </p>
+                )}
+                {posted && (
+                  <p className="text-xs text-emerald-600">
+                    Thành tích của bạn đã được ghi nhận trên bảng xếp hạng.
+                  </p>
+                )}
+                {postError && (
+                  <p className="text-xs text-rose-600">{postError}</p>
+                )}
+                <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
+                  <button
+                    type="button"
+                    className="rounded-full border border-bamboo/50 px-5 py-2 text-xs font-semibold uppercase tracking-widest text-pine transition hover:border-lotus/40 hover:text-lotus"
+                    onClick={() => setShowResultModal(false)}
+                  >
+                    Xem lại
+                  </button>
+                  <button
+                    type="button"
+                    className="rounded-full bg-lotus px-5 py-2 text-xs font-semibold uppercase tracking-widest text-white shadow-lg shadow-lotus/40 transition hover:bg-lotus/90"
+                    onClick={() => navigate('/')}
+                  >
+                    Về trang chủ
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
           <SectionHeading
             eyebrow="Trắc nghiệm nhanh"
             title="Bạn hiểu gì về phong cách giản dị?"
@@ -674,12 +717,21 @@ export function QuickQuiz() {
             </div>
             {isFinished && (
               <div className="space-y-2 text-sm">
-                <p className="text-bamboo/80">
-                  Ván chơi đã kết thúc.
+                <p className="text-bamboo/80">Ván chơi đã kết thúc.</p>
+                <p className="text-bamboo/70">
+                  {hasCompletedAll
+                    ? 'Bạn đã hoàn thành 30 câu.'
+                    : 'Bạn chưa hoàn thành đủ 30 câu.'}
                 </p>
+                {elapsedTime !== null && (
+                  <p className="text-bamboo/70">
+                    Bạn đã đạt được {attempts} lượt với thành tích {elapsedTime}
+                    s.
+                  </p>
+                )}
                 {posted && (
-                  <p className="text-emerald-200">
-                    Đã lưu kết quả lên bảng xếp hạng.
+                  <p className="text-emerald-200 text-xs">
+                    Thành tích của bạn đã được ghi nhận trên bảng xếp hạng.
                   </p>
                 )}
                 {postError && (

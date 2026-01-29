@@ -5,7 +5,6 @@ export function ReferencesPage() {
   const notebookLmUrl = 'https://media.licdn.com/dms/image/v2/D4E22AQFE-2b_cINqaA/feedshare-shrink_800/B4EZhm_JHyHIAk-/0/1754074485601?e=2147483647&v=beta&t=8phLRCRsF_dsD4vDtvKPsahYm8ii1bHrCkwVmiuzTBI'
   const gptUrl = 'https://images.seeklogo.com/logo-png/46/1/chatgpt-logo-png_seeklogo-465219.png'
   const stitchUrl = 'https://learnai.tw/wp-content/uploads/2025/06/Google-Stitch-Logo.png'
-  const extraUrls = ['', '', '']
 
   return (
     <div className="min-h-screen bg-parchment px-4 pb-8 pt-4 sm:px-8 lg:px-16">
