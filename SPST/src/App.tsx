@@ -4,6 +4,7 @@ import { HomePage } from './pages/HomePage'
 import { QuizPage } from './pages/QuizPage'
 import { ChallengePage } from './pages/ChallengePage'
 import { RankingPage } from './pages/RankingPage'
+import { ReferencesPage } from './pages/ReferencesPage'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/quiz" element={<QuizPage />} />
         <Route path="/challenge" element={<ChallengePage />} />
         <Route path="/ranking" element={<RankingPage />} />
+        <Route path="/references" element={<ReferencesPage />} />
       </Routes>
     </Router>
   )

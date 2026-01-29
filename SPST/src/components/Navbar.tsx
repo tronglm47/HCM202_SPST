@@ -5,6 +5,7 @@ const navLinks = [
   { label: 'Trắc nghiệm nhanh', path: '/quiz' },
   { label: 'Thử thách 1 tuần', path: '/challenge' },
   { label: 'Bảng xếp hạng', path: '/ranking' },
+  { label: 'Tham khảo', path: '/references' },
 ]
 
 export function Navbar() {

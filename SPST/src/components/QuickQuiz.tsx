@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { SectionHeading } from './SectionHeading'
-import quizData from '../quiz.json'
+import quizJson from '../quiz.json'
 
 type AnswerOption = {
   text: string
@@ -22,6 +22,310 @@ type RankingEntry = {
   time: number
   point: number
 }
+
+const legacyQuizData = {
+  chapters: [
+    {
+      chapter_id: 1,
+      chapter_name: 'SINH HOẠT CÁ NHÂN',
+      questions: [
+        {
+          id: 1,
+          context: 'Bữa sáng',
+          question: 'Bạn sẽ chọn bữa sáng nào để bắt đầu ngày làm việc?',
+          options: [
+            { text: 'A. Phở bò đặc biệt, cà phê ngoại' },
+            { text: 'B. Cơm nguội, cà muối, trà nóng', is_correct: true },
+            { text: 'C. Bánh mì bơ sữa phục vụ tận phòng' },
+          ],
+        },
+        {
+          id: 2,
+          context: 'Trang phục',
+          question:
+            'Bộ quần áo kaki của bạn đã sờn vai và cổ áo đã cũ, bạn xử lý thế nào?',
+          options: [
+            { text: 'A. May bộ mới tương tự để giữ hình ảnh lãnh tụ' },
+            {
+              text: 'B. Lộn ngược cổ áo lại, vá chỗ sờn để dùng tiếp',
+              is_correct: true,
+            },
+            { text: 'C. Chỉ dùng bộ cũ khi tiếp dân, dùng bộ mới khi họp' },
+          ],
+        },
+        {
+          id: 3,
+          context: 'Chỗ ở',
+          question:
+            'Khi về Thủ đô, bạn được sắp xếp ở trong Phủ Toàn quyền sang trọng, bạn quyết định ra sao?',
+          options: [
+            { text: 'A. Ở lại để thuận tiện tiếp khách quốc tế' },
+            {
+              text: 'B. Chọn ở ngôi nhà nhỏ của người thợ điện trong vườn',
+              is_correct: true,
+            },
+            { text: 'C. Cải tạo các phòng lớn thành phòng làm việc chung' },
+          ],
+        },
+        {
+          id: 4,
+          context: 'Vật dụng',
+          question:
+            'Đôi dép cao su của bạn đã mòn vẹt quai, các đồng chí muốn thay đôi mới, bạn nói gì?',
+          options: [
+            { text: 'A. Chấp thuận vì đôi cũ không còn đảm bảo an toàn' },
+            {
+              text: 'B. Đóng thêm đinh vào quai để tận dụng tiếp',
+              is_correct: true,
+            },
+            { text: 'C. Giữ làm kỷ niệm và mua một đôi giày vải' },
+          ],
+        },
+        {
+          id: 5,
+          context: 'Di chuyển',
+          question:
+            'Trên đường công tác xa, xe ô tô xóc mạnh do đường xấu, bạn xử lý thế nào?',
+          options: [
+            { text: 'A. Yêu cầu cấp xe có hệ thống giảm xóc tốt hơn' },
+            {
+              text: 'B. Xuống đi bộ cùng anh em để rèn luyện và tiết kiệm xăng',
+              is_correct: true,
+            },
+            { text: 'C. Nhắc nhở địa phương sớm tu sửa con đường này' },
+          ],
+        },
+        {
+          id: 6,
+          context: 'Văn phòng phẩm',
+          question:
+            'Khi viết bản thảo hoặc thư tay, bạn chọn loại giấy nào để sử dụng?',
+          options: [
+            { text: 'A. Giấy chuyên dụng có in tiêu đề phủ' },
+            {
+              text: 'B. Tận dụng mặt sau của bản tin cũ hoặc giấy nháp',
+              is_correct: true,
+            },
+            { text: 'C. Giấy trắng khổ tiêu chuẩn để dễ lưu trữ' },
+          ],
+        },
+        {
+          id: 7,
+          context: 'Quà biếu',
+          question:
+            'Nhân dân các địa phương gửi biếu nhiều đặc sản quý hiếm, bạn sẽ làm gì?',
+          options: [
+            { text: 'A. Nhận và viết thư cảm ơn chân thành đến bà con' },
+            {
+              text: 'B. Gửi tặng lại cho các trại nhi đồng hoặc thương binh',
+              is_correct: true,
+            },
+            { text: 'C. Nhận một phần nhỏ, còn lại gửi trả lại dân' },
+          ],
+        },
+        {
+          id: 8,
+          context: 'Trang trí ngày Tết',
+          question:
+            'Dịp Tết Nguyên đán, bạn chỉ thị việc trang trí nơi ở và làm việc ra sao?',
+          options: [
+            { text: 'A. Trang hoàng rực rỡ để tạo không khí phấn khởi' },
+            {
+              text: 'B. Chỉ một cành đào nhỏ, dành tiền tặng quà cho người nghèo',
+              is_correct: true,
+            },
+            {
+              text: 'C. Giữ nguyên trạng như ngày thường để tránh lãng phí',
+            },
+          ],
+        },
+        {
+          id: 9,
+          context: 'Nghỉ ngơi khi đi công tác',
+          question: 'Khi đi thăm địa phương vào ban đêm, bạn chọn nghỉ chân ở đâu?',
+          options: [
+            { text: 'A. Nhà khách của UBND tỉnh để đảm bảo an ninh' },
+            {
+              text: 'B. Nghỉ tại nhà dân hoặc trụ sở xã đơn sơ',
+              is_correct: true,
+            },
+            { text: 'C. Ngủ lại trên xe để sáng sớm đi làm ngay' },
+          ],
+        },
+        {
+          id: 10,
+          context: 'Sử dụng điện',
+          question:
+            'Rời phòng làm việc thấy đèn vẫn sáng dù trời đã tỏ, bạn hành động thế nào?',
+          options: [
+            { text: 'A. Nhắc nhở đồng chí giúp việc lần sau chú ý hơn' },
+            {
+              text: 'B. Tự tay tắt điện và duy trì thói quen này mỗi ngày',
+              is_correct: true,
+            },
+            { text: 'C. Yêu cầu lắp cảm biến ánh sáng để tự động hóa' },
+          ],
+        },
+      ],
+    },
+    {
+      chapter_id: 2,
+      chapter_name: 'CÔNG TÁC NGOẠI GIAO & TRỊ QUỐC',
+      questions: [
+        {
+          id: 11,
+          context: 'Chiêu đãi ngoại giao',
+          question:
+            'Khi tiếp đón các nguyên thủ quốc gia, thực đơn tiệc chiêu đãi nên là gì?',
+          options: [
+            { text: 'A. Những món đắt tiền nhất để thể hiện sự tôn trọng' },
+            {
+              text: 'B. Món ăn dân tộc giản dị, đậm đà bản sắc Việt',
+              is_correct: true,
+            },
+            {
+              text: 'C. Các món Âu - Á kết hợp theo tiêu chuẩn quốc tế',
+            },
+          ],
+        },
+        {
+          id: 12,
+          context: 'Khen thưởng cán bộ',
+          question:
+            'Để động viên một cán bộ vừa lập công lớn, bạn chọn món quà nào?',
+          options: [
+            { text: 'A. Một khoản tiền thưởng lớn để cải thiện đời sống' },
+            {
+              text: 'B. Một cuốn sổ tay hoặc chiếc bút máy kèm lời ghi tên',
+              is_correct: true,
+            },
+            { text: 'C. Đề bạt thẳng lên vị trí cao hơn ngay lập tức' },
+          ],
+        },
+        {
+          id: 13,
+          context: 'Tác phong đón tiếp',
+          question:
+            'Thấy địa phương trải thảm đỏ và huy động học sinh đứng nắng đón mình, bạn xử lý sao?',
+          options: [
+            { text: 'A. Nhanh chóng đi qua để các cháu sớm được nghỉ' },
+            {
+              text: 'B. Cuộn thảm lại, yêu cầu các cháu vào chỗ mát rồi mới nói chuyện',
+              is_correct: true,
+            },
+            {
+              text: 'C. Nghiêm khắc phê bình cán bộ tỉnh ngay tại chỗ',
+            },
+          ],
+        },
+        {
+          id: 14,
+          context: 'Xử lý quà tặng công vụ',
+          question:
+            'Một đoàn ngoại giao tặng bạn chiếc xe hơi đời mới, bạn quyết định thế nào?',
+          options: [
+            { text: 'A. Nhận để làm phương tiện đưa đón khách quốc tế' },
+            {
+              text: 'B. Giao cho bộ phận hậu cần dùng chung, bản thân vẫn dùng xe cũ',
+              is_correct: true,
+            },
+            { text: 'C. Từ chối thẳng thừng để giữ tiếng thanh liêm' },
+          ],
+        },
+        {
+          id: 15,
+          context: 'Công tâm trong dùng người',
+          question:
+            'Người thân ở quê ra nhờ bạn xin cho một công việc tốt ở cơ quan nhà nước, bạn nói gì?',
+          options: [
+            { text: 'A. Hướng dẫn họ nộp hồ sơ theo đúng quy trình' },
+            {
+              text: 'B. Giải thích rằng việc công không thể xen việc tư và từ chối',
+              is_correct: true,
+            },
+            { text: 'C. Giới thiệu sang một cơ quan khác để tránh tiếng' },
+          ],
+        },
+        {
+          id: 16,
+          context: 'Tiếp dân',
+          question:
+            'Có người dân muốn gặp trực tiếp để phản ánh nỗi oan sai, nhưng bạn đang có lịch họp, bạn làm gì?',
+          options: [
+            { text: 'A. Yêu cầu ban tiếp dân giải quyết triệt để' },
+            {
+              text: 'B. Tạm hoãn họp hoặc dành giờ nghỉ để trực tiếp lắng nghe dân',
+              is_correct: true,
+            },
+            { text: 'C. Hẹn dân vào một ngày khác khi lịch trình trống' },
+          ],
+        },
+        {
+          id: 17,
+          context: 'Phân bổ ngân sách',
+          question:
+            'Chính phủ có nguồn thu mới, ý kiến đề xuất nâng cấp nội thất công sở, bạn quyết định ra sao?',
+          options: [
+            { text: 'A. Đồng ý một phần cho những nơi quá xập xệ' },
+            {
+              text: 'B. Ưu tiên dồn lực cho quỹ xóa mù chữ và phát triển nông nghiệp',
+              is_correct: true,
+            },
+            { text: 'C. Đầu tư vào công nghệ hiện đại cho các bộ ngành' },
+          ],
+        },
+        {
+          id: 18,
+          context: 'Kỷ luật thời gian',
+          question:
+            'Trong một buổi họp quan trọng, bạn thấy nhiều đại biểu đi muộn, bạn sẽ làm gì?',
+          options: [
+            {
+              text: 'A. Phê bình chung cuối buổi họp để giữ thể diện cho họ',
+            },
+            {
+              text: 'B. Bắt đầu đúng giờ và nhắc nhở giá trị của thời gian đối với dân',
+              is_correct: true,
+            },
+            {
+              text: 'C. Cho thư ký ghi tên những người muộn để trừ lương',
+            },
+          ],
+        },
+        {
+          id: 19,
+          context: 'Đối mặt với khó khăn dân tộc',
+          question:
+            'Khi đất nước đang gặp nạn đói, bạn kêu gọi toàn dân nhịn ăn cứu đói, bản thân bạn sẽ làm gì?',
+          options: [
+            { text: 'A. Quyên góp tiền lương của cả năm' },
+            {
+              text: 'B. Thực hiện đúng mỗi tuần nhịn ăn một bữa để góp gạo',
+              is_correct: true,
+            },
+            { text: 'C. Ra lệnh kiểm soát chặt chẽ các kho lương' },
+          ],
+        },
+        {
+          id: 20,
+          context: 'Phong thái diễn thuyết',
+          question:
+            'Khi trình bày một chính sách mới trước nhân dân, bạn chọn cách diễn đạt nào?',
+          options: [
+            { text: 'A. Phân tích số liệu và lý luận chính trị sắc bén' },
+            {
+              text: 'B. Dùng lời lẽ bình dân, ví dụ cụ thể như câu chuyện gia đình',
+              is_correct: true,
+            },
+            { text: 'C. Đọc văn bản đã được chuẩn bị bởi đội ngũ chuyên gia' },
+          ],
+        },
+      ],
+    },
+  ],
+}
+
+const quizData = quizJson
 
 export function QuickQuiz() {
   const navigate = useNavigate()
@@ -45,24 +349,12 @@ export function QuickQuiz() {
   const [isPosting, setIsPosting] = useState(false)
   const [postError, setPostError] = useState<string | null>(null)
   const [posted, setPosted] = useState(false)
-  const [finalResult, setFinalResult] = useState<'success' | 'fail' | null>(
-    null,
-  )
 
   const rankingEndpoint =
     'https://6727111d302d03037e6f3df4.mockapi.io/api/v1/ranking'
 
-  const shuffleArray = <T,>(array: T[]): T[] => {
-    const shuffled = [...array]
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
-    }
-    return shuffled
-  }
-
   const questions = useMemo<QuizQuestion[]>(() => {
-    const allQuestions = quizData.chapters.flatMap((chapter) =>
+    return quizData.chapters.flatMap((chapter) =>
       chapter.questions.map((question) => ({
         id: question.id,
         chapterName: chapter.chapter_name,
@@ -74,7 +366,6 @@ export function QuickQuiz() {
         })),
       })),
     )
-    return shuffleArray(allQuestions)
   }, [])
 
   useEffect(() => {
@@ -127,6 +418,7 @@ export function QuickQuiz() {
   const postResult = async (
     durationSeconds: number,
     totalPlays: number,
+    finalPoints: number,
   ) => {
     if (isPosting) return
     setIsPosting(true)
@@ -190,13 +482,7 @@ export function QuickQuiz() {
 
     setElapsedTime(durationSeconds)
     setIsFinished(true)
-    const hasCompletedAll = finalAttempts >= questions.length
-    if (hasCompletedAll && finalPoints > 0) {
-      setFinalResult('success')
-    } else if (finalPoints <= 0) {
-      setFinalResult('fail')
-    }
-    await postResult(durationSeconds, finalAttempts)
+    await postResult(durationSeconds, finalAttempts, finalPoints)
   }
 
   const handleAnswer = async (answer: AnswerOption) => {
@@ -251,28 +537,6 @@ export function QuickQuiz() {
       id="quiz"
       className="section-shell space-y-10 scroll-mt-24 bg-white/85"
     >
-      {isFinished && finalResult && (
-        <div
-          className="fixed inset-0 z-50 flex min-h-screen w-screen items-center justify-center bg-pine/90 px-4 text-center text-white backdrop-blur-sm"
-          onClick={() => setFinalResult(null)}
-        >
-          <div
-            className="w-full max-w-2xl space-y-4 rounded-[2rem] border border-white/20 bg-white/10 p-8 shadow-2xl"
-            onClick={(event) => event.stopPropagation()}
-          >
-            <h3 className="font-serif text-3xl">
-              {finalResult === 'success'
-                ? 'Chúc mừng bạn đã tiếp thu bài học về đức tính giản dị của Bác'
-                : 'Thất bại, hãy thử lại khi đã tìm hiểu thêm những bài học nhé!'}
-            </h3>
-            {finalResult === 'success' && (
-              <p className="text-base text-bamboo/90">
-                Cố gắng phát huy bạn nhé!
-              </p>
-            )}
-          </div>
-        </div>
-      )}
       {!isNameConfirmed && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-pine/80 px-4 backdrop-blur-sm">
           <form
@@ -351,10 +615,11 @@ export function QuickQuiz() {
             </div>
             {lastResult && (
               <div
-                className={`space-y-3 rounded-2xl border px-4 py-4 text-sm ${lastResult === 'correct'
-                  ? 'border-emerald-300 bg-emerald-50 text-emerald-700'
-                  : 'border-rose-200 bg-rose-50 text-rose-600'
-                  }`}
+                className={`space-y-3 rounded-2xl border px-4 py-4 text-sm ${
+                  lastResult === 'correct'
+                    ? 'border-emerald-300 bg-emerald-50 text-emerald-700'
+                    : 'border-rose-200 bg-rose-50 text-rose-600'
+                }`}
               >
                 <p className="font-semibold">
                   {lastResult === 'correct'
